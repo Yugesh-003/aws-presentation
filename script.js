@@ -34,11 +34,15 @@ Click each card to reveal the options. Wait for audience reactions. Pause on the
 <strong>Key takeaway:</strong> AWS powers huge portions of the internet — Netflix, NASA, Airbnb, and millions more all run on AWS.<br><br>
 <strong>Transition:</strong> But how does Amazon make money? Let's look at the numbers.`,
 
-  3: `<strong>Speaker 1 · ~3 min</strong><br><em>Business Overview — Verified Financial Data</em><br><br>
-The bars animate when you arrive on this slide. Walk the audience through each segment.<br><br>
-<strong>Critical accuracy point:</strong> AWS = 17% of net sales but 58% of operating income in 2024. This is a real ratio, not an estimate. Source is official Amazon earnings, Q4 2024.<br><br>
-<strong>Don't say:</strong> "AWS is Amazon's biggest revenue earner" — that's wrong. North America retail is larger by revenue. AWS is the most <em>profitable</em> per dollar earned.<br><br>
-<strong>Key takeaway:</strong> Cloud services can be extremely high-margin businesses.<br><br>
+  3: `<strong>Speaker 1 · ~3 min</strong><br><em>Business Overview — Q2 2026 Verified Data</em><br><br>
+The bars animate when you arrive on this slide. Walk the audience through each segment. The left panel shows operating income detail cards; the right panel shows the bar charts.<br><br>
+<strong>Key numbers (Q2 2026):</strong><br>
+• AWS: Revenue $42.232B, Op. Income $16.621B, Margin <strong>39.4%</strong><br>
+• North America: Revenue $116.177B, Op. Income $9.123B, Margin 7.9%<br>
+• International: Revenue $42.197B, Op. Income $1.717B, Margin 4.1%<br><br>
+<strong>Critical accuracy point:</strong> AWS revenue (~$42B) is roughly equal to International revenue (~$42B) in Q2 2026, but AWS operating income ($16.6B) is nearly <em>10×</em> that of International ($1.7B). AWS contributes ~59% of total operating income despite being ~21% of total revenue.<br><br>
+<strong>Don't say:</strong> "AWS is Amazon's biggest revenue earner" — North America retail is still larger by revenue. AWS is the most <em>profitable</em> segment per dollar earned.<br><br>
+<strong>Key takeaway:</strong> Cloud services can be extremely high-margin businesses. AWS margin is 39.4% vs. North America retail at 7.9%.<br><br>
 <strong>Transition:</strong> This leads to a big question — why would a retailer build computing infrastructure?`,
 
   4: `<strong>Speaker 1 · ~1 min</strong><br><em>Transition Slide</em><br><br>
