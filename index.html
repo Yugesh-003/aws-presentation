@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyond Shopping: Understanding Cloud Computing with AWS</title>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Interactive beginner-friendly presentation on Cloud Computing and AWS for college students">
+</head>
+<body>
+<div id="presentation-wrapper" role="main" aria-label="Presentation">
+
+  <!-- Progress Bar -->
+  <div id="progress-bar-track" role="progressbar" aria-valuemin="1" aria-valuemax="38" aria-valuenow="1" aria-label="Presentation progress">
+    <div id="progress-bar-fill"></div>
+  </div>
+
+  <!-- Top Bar -->
+  <nav id="top-bar" aria-label="Presentation controls">
+    <span id="section-indicator" aria-live="polite">Section A: The Hook</span>
+    <div class="top-bar-controls">
+      <button class="ctrl-btn" id="btn-overview" aria-label="Slide overview">⊞ Overview</button>
+      <button class="ctrl-btn" id="btn-notes" aria-label="Toggle presenter notes">📝 Notes</button>
+      <button class="ctrl-btn" id="btn-fullscreen" aria-label="Toggle fullscreen">⛶ Fullscreen</button>
+      <button class="ctrl-btn" id="btn-keys" aria-label="Keyboard shortcuts">⌨ Keys</button>
+      <button class="ctrl-btn" id="btn-reset" aria-label="Reset interactive elements">↺ Reset</button>
+    </div>
+    <span id="slide-counter" aria-live="polite">01 / 38</span>
+  </nav>
+
+  <!-- Slide Stage -->
+  <div id="slide-stage">
+    <div id="slide-container" aria-live="polite" aria-atomic="true">
+      <div class="slide-inner">
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION A: THE HOOK — Slides 1-4
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- SLIDE 1: Title -->
+<section class="slide active" id="slide-1" data-section="Section A: The Hook" data-title="Title: Beyond Shopping">
+  <div class="title-slide-layout">
+    <div class="title-text-block">
+      <div class="section-badge">🎓 College Introductory Session · Cloud Computing</div>
+      <h1 class="title-main">Beyond <span>Shopping</span>:<br>Understanding Cloud Computing</h1>
+      <p class="title-sub">From Amazon's business model to the technology powering the modern internet — explained from zero.</p>
+      <div class="presenter-names" id="presenter-names">
+        <span class="presenter-chip" contenteditable="true" title="Click to edit name">Speaker 1 Name</span>
+        <span class="presenter-chip" contenteditable="true" title="Click to edit name">Speaker 2 Name</span>
+        <span class="presenter-chip" contenteditable="true" title="Click to edit name">Speaker 3 Name</span>
+        <span class="presenter-chip" contenteditable="true" title="Click to edit name">Speaker 4 Name</span>
+        <span class="presenter-chip" contenteditable="true" title="Click to edit name">Speaker 5 Name</span>
+        <span class="presenter-chip" contenteditable="true" title="Click to edit name">Speaker 6 Name</span>
+        <span class="presenter-chip" contenteditable="true" title="Click to edit name">Speaker 7 Name</span>
+      </div>
+      <p class="college-tag">
+        <span contenteditable="true" title="Click to edit">Department Name</span> ·
+        <span contenteditable="true" title="Click to edit">Your College / University</span>
+      </p>
+    </div>
+    <div class="title-visual" aria-hidden="true">
+      <svg viewBox="0 0 340 240" class="aws-cloud-icon" xmlns="http://www.w3.org/2000/svg">
+        <!-- Data center racks -->
+        <rect x="20" y="80" width="60" height="140" rx="6" fill="#152232" stroke="#1e3045" stroke-width="1.5"/>
+        <rect x="28" y="90" width="44" height="8" rx="2" fill="#ff9900" opacity=".8"/>
+        <rect x="28" y="102" width="44" height="8" rx="2" fill="#1a9dff" opacity=".7"/>
+        <rect x="28" y="114" width="44" height="8" rx="2" fill="#2ecc71" opacity=".6"/>
+        <rect x="28" y="126" width="44" height="8" rx="2" fill="#ff9900" opacity=".5"/>
+        <rect x="28" y="138" width="44" height="8" rx="2" fill="#1a9dff" opacity=".4"/>
+        <rect x="28" y="150" width="44" height="8" rx="2" fill="#2ecc71" opacity=".4"/>
+        <rect x="28" y="162" width="44" height="8" rx="2" fill="#ff9900" opacity=".35"/>
+        <rect x="28" y="174" width="44" height="8" rx="2" fill="#1a9dff" opacity=".3"/>
+        <rect x="90" y="100" width="60" height="120" rx="6" fill="#152232" stroke="#1e3045" stroke-width="1.5"/>
+        <rect x="98" y="110" width="44" height="8" rx="2" fill="#ff9900" opacity=".7"/>
+        <rect x="98" y="122" width="44" height="8" rx="2" fill="#1a9dff" opacity=".6"/>
+        <rect x="98" y="134" width="44" height="8" rx="2" fill="#2ecc71" opacity=".5"/>
+        <rect x="98" y="146" width="44" height="8" rx="2" fill="#ff9900" opacity=".4"/>
+        <rect x="98" y="158" width="44" height="8" rx="2" fill="#1a9dff" opacity=".35"/>
+        <rect x="98" y="170" width="44" height="8" rx="2" fill="#2ecc71" opacity=".3"/>
+        <!-- Cloud shape -->
+        <ellipse cx="230" cy="80" rx="65" ry="38" fill="#0f2a42" stroke="#1a9dff" stroke-width="1.5" opacity=".9"/>
+        <ellipse cx="185" cy="92" rx="36" ry="26" fill="#0f2a42" stroke="#1a9dff" stroke-width="1.5" opacity=".9"/>
+        <ellipse cx="272" cy="95" rx="32" ry="24" fill="#0f2a42" stroke="#1a9dff" stroke-width="1.5" opacity=".9"/>
+        <rect x="195" y="95" width="90" height="32" fill="#0f2a42" stroke="none"/>
+        <!-- AWS text in cloud -->
+        <text x="230" y="89" text-anchor="middle" fill="#ff9900" font-size="16" font-weight="900" font-family="Segoe UI, sans-serif">AWS</text>
+        <!-- Connecting lines -->
+        <line x1="160" y1="150" x2="195" y2="120" stroke="#1a9dff" stroke-width="1" stroke-dasharray="4,3" opacity=".6"/>
+        <line x1="195" y1="120" x2="230" y2="127" stroke="#1a9dff" stroke-width="1" opacity=".6"/>
+        <!-- Laptop -->
+        <rect x="155" y="155" width="50" height="35" rx="3" fill="#1a2a3a" stroke="#2a4060" stroke-width="1.5"/>
+        <rect x="148" y="188" width="64" height="5" rx="2" fill="#2a4060"/>
+        <text x="180" y="176" text-anchor="middle" fill="#a0b0c0" font-size="9" font-family="Segoe UI, sans-serif">laptop</text>
+        <!-- Shopping cart icon -->
+        <text x="280" y="170" font-size="28" fill="#ff9900" opacity=".8">🛒</text>
+        <!-- Globe -->
+        <circle cx="290" cy="55" r="20" fill="none" stroke="#2ecc71" stroke-width="1.5" opacity=".6"/>
+        <ellipse cx="290" cy="55" rx="10" ry="20" fill="none" stroke="#2ecc71" stroke-width="1" opacity=".4"/>
+        <line x1="270" y1="55" x2="310" y2="55" stroke="#2ecc71" stroke-width="1" opacity=".4"/>
+      </svg>
+    </div>
+  </div>
+  <p class="source-note" style="margin-top:auto">💡 Click on your name chips above to edit them. Names, department, and college are editable.</p>
+</section>
+
+<!-- SLIDE 2: What comes to mind -->
+<section class="slide" id="slide-2" data-section="Section A: The Hook" data-title="What Do You Think of Amazon?">
+  <span class="section-badge">Section A · Slide 2 of 38</span>
+  <h2 class="slide-title">What Comes to Mind When You Hear <span class="accent">"Amazon"</span>?</h2>
+  <p class="slide-subtitle">Click each card to reveal. Which one surprised you?</p>
+  <div class="slide-body">
+    <div class="quiz-grid">
+      <div class="quiz-card" data-reveal="0" onclick="revealQuizCard(this, false)" tabindex="0" role="button" aria-label="Online Shopping">
+        <div class="quiz-icon">🛒</div>
+        <div class="quiz-label">Online Shopping</div>
+        <div class="quiz-sub">Books, electronics, groceries…</div>
+      </div>
+      <div class="quiz-card" data-reveal="1" onclick="revealQuizCard(this, false)" tabindex="0" role="button" aria-label="Fast Delivery">
+        <div class="quiz-icon">📦</div>
+        <div class="quiz-label">Fast Delivery</div>
+        <div class="quiz-sub">Same-day, next-day delivery</div>
+      </div>
+      <div class="quiz-card" data-reveal="2" onclick="revealQuizCard(this, false)" tabindex="0" role="button" aria-label="Prime Video">
+        <div class="quiz-icon">🎬</div>
+        <div class="quiz-label">Prime Video</div>
+        <div class="quiz-sub">Movies, shows, live sports</div>
+      </div>
+      <div class="quiz-card highlight" data-reveal="3" onclick="revealQuizCard(this, true)" tabindex="0" role="button" aria-label="AWS Cloud Computing">
+        <div class="quiz-icon">☁️</div>
+        <div class="quiz-label">AWS — Cloud Computing</div>
+        <div class="quiz-sub">Powers Netflix, NASA, Airbnb, and millions more</div>
+      </div>
+    </div>
+    <div class="analogy-box mt-md" id="quiz-reveal-msg" style="display:none">
+      <strong>Did that surprise you?</strong> The same company that delivers your packages also provides the computing infrastructure that runs a huge portion of the internet — including services you use every single day.
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 3: How Does Amazon Make Money? -->
+<section class="slide" id="slide-3" data-section="Section A: The Hook" data-title="Amazon's Business Segments">
+  <span class="section-badge">Section A · Slide 3 of 38</span>
+  <h2 class="slide-title">How Does Amazon <span class="accent">Make Money</span>?</h2>
+  <p class="slide-subtitle">Amazon has several major business segments. Here's how they compare — Full Year 2024.</p>
+  <div class="slide-body">
+    <div class="two-col two-col-2-3" style="align-items:flex-start;gap:16px">
+      <div>
+        <p style="font-size:.78rem;color:var(--text-secondary);margin-bottom:10px;line-height:1.6">Amazon operates across retail, third-party marketplace, advertising, subscriptions, and cloud infrastructure. Each segment earns differently.</p>
+        <div class="highlight-box mt-sm">
+          <strong>Key insight:</strong> AWS represents about <strong>17% of Amazon's total net sales</strong> but delivered <strong>~58% of total operating income</strong> in 2024. This shows how profitable cloud services can be.
+        </div>
+        <p class="source-note mt-sm">
+          Source: <a href="https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Fourth-Quarter-Results/default.aspx" target="_blank" rel="noopener">Amazon Q4 2024 Earnings Release, Feb 6 2025</a>. Figures are for Full Year 2024. Net sales ≠ operating income; do not compare across categories.
+        </p>
+      </div>
+      <div>
+        <div style="margin-bottom:6px;font-size:.72rem;color:var(--text-muted);display:flex;justify-content:space-between;padding:0 4px"><span>Segment</span><span>Net Sales (Full Year 2024)</span></div>
+        <div class="bar-chart-row">
+          <div class="bar-label">North America</div>
+          <div class="bar-track"><div class="bar-fill blue" data-width="61" style="width:0%">$387.5B</div></div>
+        </div>
+        <div class="bar-chart-row">
+          <div class="bar-label">International</div>
+          <div class="bar-track"><div class="bar-fill purple" data-width="22" style="width:0%">$142.9B</div></div>
+        </div>
+        <div class="bar-chart-row">
+          <div class="bar-label">AWS</div>
+          <div class="bar-track"><div class="bar-fill orange" data-width="17" style="width:0%">$107.6B</div></div>
+        </div>
+        <div style="margin-top:14px;margin-bottom:6px;font-size:.72rem;color:var(--text-muted);display:flex;justify-content:space-between;padding:0 4px"><span>Segment</span><span>Operating Income (Full Year 2024)</span></div>
+        <div class="bar-chart-row">
+          <div class="bar-label">North America</div>
+          <div class="bar-track"><div class="bar-fill blue" data-width="36" style="width:0%">$25.0B</div></div>
+        </div>
+        <div class="bar-chart-row">
+          <div class="bar-label">International</div>
+          <div class="bar-track"><div class="bar-fill purple" data-width="6" style="width:0%">$3.8B</div></div>
+        </div>
+        <div class="bar-chart-row">
+          <div class="bar-label">AWS</div>
+          <div class="bar-track"><div class="bar-fill orange" data-width="58" style="width:0%">$39.8B</div></div>
+        </div>
+        <p class="source-note mt-sm">Total 2024 net sales: $638.0B · Total operating income: $68.6B · AWS op. margin ~37% · NA ~6.4% · Intl ~2.7%</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 4: The Big Question -->
+<section class="slide" id="slide-4" data-section="Section A: The Hook" data-title="The Big Question">
+  <span class="section-badge">Section A · Slide 4 of 38</span>
+  <div class="slide-body" style="justify-content:center;align-items:center;text-align:center;gap:24px">
+    <div style="font-size:3.5rem" aria-hidden="true">🤔</div>
+    <h2 class="slide-title" style="font-size:clamp(1.6rem,3.2vw,2.4rem)">
+      Amazon is known for <span class="accent">selling products</span>.<br>
+      So why does it also sell <span class="blue">computing power</span> to companies worldwide?
+    </h2>
+    <p class="slide-subtitle" style="max-width:680px;margin:0 auto">
+      To answer this, we need to understand what "computing power" actually means — and why a retailer became one of the world's most important technology companies.
+    </p>
+    <div class="flow-diagram mt-md">
+      <div class="flow-box accent">Amazon's retail infrastructure</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box blue">Reusable technology capabilities</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box green">AWS: services for everyone</div>
+    </div>
+    <p style="font-size:.82rem;color:var(--text-muted);margin-top:8px">Let's start from the very beginning — what is a server, and why does it matter?</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION B: UNDERSTANDING CLOUD COMPUTING — Slides 5-10
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- SLIDE 5: The 1 GB Movie Problem -->
+<section class="slide" id="slide-5" data-section="Section B: Cloud Computing Basics" data-title="The 1 GB Movie Problem">
+  <span class="section-badge">Section B · Slide 5 of 38</span>
+  <h2 class="slide-title">Imagine You Have a <span class="accent">1 GB Movie</span></h2>
+  <div class="slide-body">
+    <div class="two-col">
+      <div>
+        <p style="font-size:.88rem;color:var(--text-secondary);line-height:1.7;margin-bottom:14px">
+          You just downloaded a great movie. It's 1 GB in size. You want to:
+        </p>
+        <ul class="bullet-list">
+          <li>Keep it safe forever</li>
+          <li>Watch it from any device</li>
+          <li>Share it with friends easily</li>
+          <li>Not lose it if your phone breaks</li>
+        </ul>
+        <div class="analogy-box mt-md">
+          <strong>The problem:</strong> Buying a new external hard drive just for one file feels wasteful. Your phone might be full. What if there was a simpler way to store data without buying hardware yourself?
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
+        <div class="device-box">
+          <div class="device-icon">📱</div>
+          <div class="device-label">Your Phone</div>
+          <div class="device-sub">Almost full · 1 GB movie</div>
+        </div>
+        <div style="text-align:center">
+          <div style="font-size:1.6rem">❓</div>
+          <div style="font-size:.75rem;color:var(--text-muted);margin-top:4px">Where does it go?</div>
+        </div>
+        <div class="card" style="width:100%;text-align:center">
+          <div style="font-size:2rem;margin-bottom:6px">💾 💿 📦</div>
+          <div style="font-size:.75rem;color:var(--text-secondary)">Buy a hard drive? Buy a USB? Pay for cloud storage?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 6: Friend's Hard Drive Analogy -->
+<section class="slide" id="slide-6" data-section="Section B: Cloud Computing Basics" data-title="Borrowing Your Friend's Storage">
+  <span class="section-badge">Section B · Slide 6 of 38</span>
+  <h2 class="slide-title">Borrowing Your <span class="accent">Friend's Hard Drive</span></h2>
+  <p class="slide-subtitle">A simplified analogy for how cloud storage works at its core.</p>
+  <div class="slide-body">
+    <div class="analogy-stage" id="transfer-demo">
+      <div class="device-box" id="user-device">
+        <div class="device-icon">🧑‍💻</div>
+        <div class="device-label">You</div>
+        <div class="device-sub">1 GB movie</div>
+        <div style="margin-top:8px;font-size:.65rem;background:rgba(231,76,60,.15);border:1px solid rgba(231,76,60,.3);color:#e74c3c;padding:3px 8px;border-radius:4px">Storage: 98% Full</div>
+      </div>
+      <div class="transfer-arrow">
+        <div style="font-size:.7rem;color:var(--accent);font-weight:700;margin-bottom:2px">Send file</div>
+        <div class="arrow-line">
+          <div class="packet" title="File packet">📄</div>
+        </div>
+        <div style="font-size:.65rem;color:var(--text-muted);margin-top:2px">over network</div>
+      </div>
+      <div class="device-box" id="friend-device" style="border-color:var(--green)">
+        <div class="device-icon">🖥️</div>
+        <div class="device-label">Friend's Computer</div>
+        <div class="device-sub">Plenty of space</div>
+        <div style="margin-top:8px;font-size:.65rem;background:rgba(46,204,113,.15);border:1px solid rgba(46,204,113,.3);color:#2ecc71;padding:3px 8px;border-radius:4px">Stores your file ✓</div>
+      </div>
+    </div>
+    <div class="two-col mt-md" style="gap:12px">
+      <div class="analogy-box">
+        <strong>The analogy in steps:</strong><br>
+        1. You have a file too big for your own device<br>
+        2. Your friend has spare storage and agrees to keep it<br>
+        3. You copy the file to their computer<br>
+        4. You pay a small fee for the service<br>
+        5. You can access your file whenever you need it
+      </div>
+      <div class="card" style="border-color:var(--accent)">
+        <div class="card-title">Important Clarification</div>
+        <p style="font-size:.75rem;color:var(--text-secondary);line-height:1.6">Cloud services don't literally use your friend's hard drive. This is a simplified analogy. Real cloud providers like AWS operate large, secure data centers with professional infrastructure. Prices depend on service, capacity, usage, and other factors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 7: From Friend's Computer to the Cloud -->
+<section class="slide" id="slide-7" data-section="Section B: Cloud Computing Basics" data-title="Friend's Computer → The Cloud">
+  <span class="section-badge">Section B · Slide 7 of 38</span>
+  <h2 class="slide-title">From Friend's Computer to <span class="accent">The Cloud</span></h2>
+  <div class="slide-body">
+    <div class="two-col two-col-3-2" style="gap:20px;align-items:center">
+      <div>
+        <div class="highlight-box" style="margin-bottom:14px">
+          <strong>Cloud computing</strong> means accessing computing resources — such as servers, storage, databases, and software — over a network (usually the internet), when you need them, and paying for what you use.
+        </div>
+        <ul class="bullet-list mt-sm">
+          <li>Your friend's computer → Professional <strong style="color:var(--accent)">data centers</strong></li>
+          <li>Small fee → <strong style="color:var(--accent)">Pay-as-you-go</strong> pricing model</li>
+          <li>One friend → <strong style="color:var(--accent)">Thousands of servers</strong> worldwide</li>
+          <li>Manual copying → Instant, secure <strong style="color:var(--accent)">uploads over internet</strong></li>
+          <li>File sharing → Databases, compute, AI, and more</li>
+        </ul>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+        <div style="text-align:center">
+          <div style="font-size:1.6rem">💻</div>
+          <div style="font-size:.7rem;color:var(--text-secondary)">Your Laptop</div>
+        </div>
+        <div style="font-size:.9rem;color:var(--accent)">↓</div>
+        <div style="text-align:center;font-size:.7rem;color:var(--blue)">🌐 Internet</div>
+        <div style="font-size:.9rem;color:var(--accent)">↓</div>
+        <div class="card" style="text-align:center;padding:12px 20px">
+          <div style="font-size:1.4rem;margin-bottom:4px">🏢</div>
+          <div style="font-size:.72rem;font-weight:700;color:var(--accent)">AWS Data Center</div>
+          <div style="font-size:.65rem;color:var(--text-muted);margin-top:4px">Thousands of servers<br>Shared storage<br>High availability</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 8: What Is a Server? -->
+<section class="slide" id="slide-8" data-section="Section B: Cloud Computing Basics" data-title="What Is a Server?">
+  <span class="section-badge">Section B · Slide 8 of 38</span>
+  <h2 class="slide-title">What Is a <span class="accent">Server</span>?</h2>
+  <p class="slide-subtitle">A server is a computer that provides services or resources to other computers.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:flex-start">
+      <div>
+        <div class="card accent-border" style="margin-bottom:12px">
+          <div class="card-title">🍽️ Restaurant Analogy</div>
+          <div style="display:flex;flex-direction:column;gap:7px;font-size:.78rem">
+            <div><span style="color:var(--accent)">Customer</span> = You (the user making a request)</div>
+            <div><span style="color:var(--blue)">Waiter</span> = Your request traveling over the internet</div>
+            <div><span style="color:var(--green)">Kitchen</span> = The server processing your request</div>
+            <div><span style="color:var(--purple)">Food</span> = The response (webpage, file, data)</div>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>A server is just a <strong style="color:var(--accent)">computer configured to serve others</strong></li>
+          <li>It doesn't need to look special — it's the role that matters</li>
+          <li>Servers run 24/7 to be available when needed</li>
+          <li>A server can serve websites, files, databases, emails, and more</li>
+        </ul>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="card">
+          <div class="card-title" style="color:var(--blue)">Personal Computer</div>
+          <p style="font-size:.75rem;color:var(--text-secondary);line-height:1.5">Used by one person to run applications, browse the web, write documents. Not typically set up to serve others.</p>
+        </div>
+        <div style="text-align:center;font-size:.8rem;color:var(--text-muted)">vs.</div>
+        <div class="card green-border">
+          <div class="card-title green">Server</div>
+          <p style="font-size:.75rem;color:var(--text-secondary);line-height:1.5">Set up to respond to requests from many other computers. Often kept in data centers. Can be any computer with the right software configuration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 9: What Is On-Premises? -->
+<section class="slide" id="slide-9" data-section="Section B: Cloud Computing Basics" data-title="What Is On-Premises?">
+  <span class="section-badge">Section B · Slide 9 of 38</span>
+  <h2 class="slide-title">What Is <span class="accent">On-Premises</span> Infrastructure?</h2>
+  <p class="slide-subtitle">When an organization owns and manages its own servers at its own location.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:flex-start">
+      <div>
+        <div class="analogy-box" style="margin-bottom:12px">
+          <strong>Imagine your college</strong> decided to build its own server room — buying computers, installing them, wiring them up, and managing them internally.
+        </div>
+        <ul class="bullet-list">
+          <li><strong style="color:var(--accent)">Upfront purchase</strong> of all hardware (servers, storage, networking)</li>
+          <li>You provide <strong style="color:var(--accent)">electricity and cooling</strong> 24/7</li>
+          <li>Your team handles <strong style="color:var(--accent)">network and security</strong></li>
+          <li>Physical space, cabling, and maintenance</li>
+          <li>Plan for <strong style="color:var(--accent)">peak demand</strong> — buy capacity in advance</li>
+          <li>Upgrade hardware when it becomes outdated</li>
+        </ul>
+        <div class="card mt-md" style="border-color:var(--blue)">
+          <div class="card-title blue">When On-Premises Makes Sense</div>
+          <p style="font-size:.74rem;color:var(--text-secondary);line-height:1.5">Direct control requirements, specific hardware configurations, certain compliance arrangements, or workloads where the economics favor owned infrastructure.</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div style="background:var(--bg-card2);border:2px solid var(--border);border-radius:var(--radius);padding:20px 24px;text-align:center;width:100%">
+          <div style="font-size:2rem;margin-bottom:4px">🏫</div>
+          <div style="font-size:.8rem;font-weight:700;color:var(--text-primary);margin-bottom:12px">College Server Room</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:8px;font-size:.65rem;text-align:center">
+              <div style="font-size:1.1rem">🖥️</div><div style="color:var(--text-muted)">Server Racks</div>
+            </div>
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:8px;font-size:.65rem;text-align:center">
+              <div style="font-size:1.1rem">❄️</div><div style="color:var(--text-muted)">Cooling Units</div>
+            </div>
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:8px;font-size:.65rem;text-align:center">
+              <div style="font-size:1.1rem">⚡</div><div style="color:var(--text-muted)">Power Supply</div>
+            </div>
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:8px;font-size:.65rem;text-align:center">
+              <div style="font-size:1.1rem">🔒</div><div style="color:var(--text-muted)">Security Team</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:.7rem;color:var(--text-muted);text-align:center">All of this is <strong style="color:var(--text-secondary)">your responsibility</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 10: On-Premises vs Cloud Comparison -->
+<section class="slide" id="slide-10" data-section="Section B: Cloud Computing Basics" data-title="On-Premises vs. Cloud">
+  <span class="section-badge">Section B · Slide 10 of 38</span>
+  <h2 class="slide-title">On-Premises <span class="accent">vs.</span> Cloud</h2>
+  <p class="slide-subtitle">There's no universal "better" — the right choice depends on requirements, workload, and costs.</p>
+  <div class="slide-body">
+    <table class="compare-table" style="flex:1">
+      <thead>
+        <tr>
+          <th class="col-feature">Aspect</th>
+          <th class="col-onprem">🏢 On-Premises</th>
+          <th class="col-cloud">☁️ Cloud</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Initial Investment</td><td>High upfront cost for hardware</td><td>Generally low upfront; pay-as-you-go</td></tr>
+        <tr><td>Hardware Maintenance</td><td>Your team manages repairs and upgrades</td><td>Cloud provider handles physical hardware</td></tr>
+        <tr><td>Scaling Up</td><td>Buy new hardware; takes time</td><td>Often quick to add capacity</td></tr>
+        <tr><td>Scaling Down</td><td>Hardware already purchased</td><td>Release resources and reduce costs</td></tr>
+        <tr><td>Control</td><td>Full control of hardware and software</td><td>Control varies by service type</td></tr>
+        <tr><td>Payment Model</td><td>Capital expense + ongoing ops costs</td><td>Operational expense; usage-based</td></tr>
+        <tr><td>Security Responsibility</td><td>Entirely your organization's</td><td>Shared between provider and customer</td></tr>
+      </tbody>
+    </table>
+    <div class="analogy-box mt-sm">
+      <strong>Bottom line:</strong> Many organizations use a combination of both — keeping sensitive or specialized workloads on-premises while using cloud for scale, flexibility, or new services.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION C: HOW CLOUD EVOLVED — Slides 11-14
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- SLIDE 11: Before Cloud Computing -->
+<section class="slide" id="slide-11" data-section="Section C: How Cloud Evolved" data-title="Before Cloud Computing">
+  <span class="section-badge">Section C · Slide 11 of 38</span>
+  <h2 class="slide-title">Before Cloud Computing <span class="accent">Became Mainstream</span></h2>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:center">
+      <div>
+        <p style="font-size:.85rem;color:var(--text-secondary);line-height:1.7;margin-bottom:14px">Organizations traditionally purchased physical servers and managed all their own infrastructure. This meant:</p>
+        <ul class="bullet-list">
+          <li>Buy servers based on <strong style="color:var(--accent)">peak demand projections</strong></li>
+          <li>Servers often ran at <strong style="color:var(--accent)">low utilization</strong> most of the time</li>
+          <li>A server bought for Black Friday traffic sat <strong style="color:var(--accent)">mostly idle</strong> in January</li>
+          <li>New projects required <strong style="color:var(--accent)">weeks or months</strong> to provision hardware</li>
+          <li>Small teams couldn't afford enterprise-grade infrastructure</li>
+        </ul>
+        <div class="analogy-box mt-md">
+          <strong>Analogy:</strong> Imagine buying a 10-seat bus just because once a year, your whole family visits. Most days, it sits empty. That's what over-provisioned servers felt like.
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+        <div style="background:var(--bg-card2);border:2px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center;width:90%">
+          <div style="font-size:1.8rem;margin-bottom:8px">🖥️</div>
+          <div style="font-size:.8rem;font-weight:700;color:var(--text-primary);margin-bottom:12px">Powerful Server</div>
+          <div style="font-size:.72rem;color:var(--text-muted);margin-bottom:10px">CPU Utilization</div>
+          <div style="background:rgba(255,255,255,.05);border-radius:6px;height:14px;overflow:hidden;margin-bottom:6px">
+            <div style="width:12%;height:100%;background:var(--accent);border-radius:6px"></div>
+          </div>
+          <div style="font-size:.68rem;color:var(--red)">Only 12% utilized — expensive hardware sitting idle</div>
+        </div>
+        <div style="font-size:.72rem;color:var(--text-muted);text-align:center;max-width:200px">This underutilization problem drove the search for a better model.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 12: How AWS Emerged -->
+<section class="slide" id="slide-12" data-section="Section C: How Cloud Evolved" data-title="How AWS Emerged">
+  <span class="section-badge">Section C · Slide 12 of 38</span>
+  <h2 class="slide-title">How <span class="accent">AWS</span> Emerged</h2>
+  <p class="slide-subtitle">A timeline of how Amazon's internal infrastructure became a global cloud platform.</p>
+  <div class="slide-body">
+    <div style="display:flex;flex-direction:column;gap:10px;flex:1;justify-content:center">
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <div style="background:var(--accent);color:#000;font-weight:800;font-size:.72rem;padding:5px 9px;border-radius:6px;flex-shrink:0;min-width:46px;text-align:center">Early<br>2000s</div>
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 14px;flex:1;font-size:.78rem;color:var(--text-secondary);line-height:1.5">Amazon builds substantial technology infrastructure to support its rapidly growing online retail operations. Engineering teams develop internal tools and reusable infrastructure capabilities.</div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <div style="background:var(--blue);color:#fff;font-weight:800;font-size:.72rem;padding:5px 9px;border-radius:6px;flex-shrink:0;min-width:46px;text-align:center">Mar<br>2006</div>
+        <div style="background:var(--bg-card);border:1px solid var(--blue);border-radius:var(--radius-sm);padding:10px 14px;flex:1;font-size:.78rem;color:var(--text-secondary);line-height:1.5"><strong style="color:var(--blue)">Amazon S3 launches</strong> on March 14, 2006 — the first generally available AWS service. Designed to provide scalable object storage over the internet. <a href="https://aws.amazon.com/blogs/aws/twenty-years-of-amazon-s3-and-building-whats-next" target="_blank" rel="noopener" style="color:var(--blue-light);font-size:.68rem">Source: AWS Blog</a></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <div style="background:var(--green);color:#000;font-weight:800;font-size:.72rem;padding:5px 9px;border-radius:6px;flex-shrink:0;min-width:46px;text-align:center">Aug<br>2006</div>
+        <div style="background:var(--bg-card);border:1px solid var(--green);border-radius:var(--radius-sm);padding:10px 14px;flex:1;font-size:.78rem;color:var(--text-secondary);line-height:1.5"><strong style="color:var(--green)">Amazon EC2 enters limited public beta</strong> (August 25, 2006), offering on-demand compute capacity. General availability followed in October 2008. <a href="https://aws.amazon.com/id/about-aws/our-origins/" target="_blank" rel="noopener" style="color:var(--blue-light);font-size:.68rem">Source: AWS Our Origins</a></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <div style="background:var(--purple);color:#fff;font-weight:800;font-size:.72rem;padding:5px 9px;border-radius:6px;flex-shrink:0;min-width:46px;text-align:center">2006<br>→Now</div>
+        <div style="background:var(--bg-card);border:1px solid var(--purple);border-radius:var(--radius-sm);padding:10px 14px;flex:1;font-size:.78rem;color:var(--text-secondary);line-height:1.5">AWS expands to hundreds of services across computing, storage, databases, AI, networking, and more. Customers include startups, enterprises, governments, and developers worldwide.</div>
+      </div>
+    </div>
+    <div class="analogy-box mt-sm" style="font-size:.72rem">
+      <strong>Important nuance:</strong> The story wasn't simply "Amazon had spare servers and rented them out." Amazon developed reusable infrastructure capabilities while scaling its retail business, then offered those capabilities as services to external customers. This was a deliberate strategic evolution.
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 13: Why Cloud Computing Became Important -->
+<section class="slide" id="slide-13" data-section="Section C: How Cloud Evolved" data-title="Why Cloud Computing Became Important">
+  <span class="section-badge">Section C · Slide 13 of 38</span>
+  <h2 class="slide-title">Why Cloud Computing <span class="accent">Became Essential</span></h2>
+  <p class="slide-subtitle">A student builds a website on their laptop. How do classmates access it?</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:center">
+      <div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div class="step-item"><div class="step-num">1</div><div class="step-content"><strong>Local development</strong> — You write code on your laptop. Works perfectly on your machine.</div></div>
+          <div class="step-item"><div class="step-num">2</div><div class="step-content"><strong>The problem</strong> — Your laptop isn't always on. It's behind your home router. Friends can't connect to it easily.</div></div>
+          <div class="step-item"><div class="step-num">3</div><div class="step-content"><strong>Hosting</strong> — You need a server that is always on, with a public IP address, connected to the internet.</div></div>
+          <div class="step-item"><div class="step-num">4</div><div class="step-content"><strong>Public access</strong> — With a hosted server, anyone in the world can visit your website via a browser.</div></div>
+          <div class="step-item"><div class="step-num">5</div><div class="step-content"><strong>Cloud solution</strong> — Launch an EC2 instance, deploy your site, and it's live — without buying any hardware.</div></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+        <div style="text-align:center"><div style="font-size:1.5rem">💻</div><div style="font-size:.7rem;color:var(--text-secondary)">Your Laptop<br>(dev environment)</div></div>
+        <div style="font-size:.9rem;color:var(--accent)">↓ deploy</div>
+        <div class="card accent-border" style="text-align:center;padding:12px 18px">
+          <div style="font-size:1.5rem;margin-bottom:4px">☁️ 🖥️</div>
+          <div style="font-size:.75rem;font-weight:700;color:var(--accent)">Cloud Server (EC2)</div>
+          <div style="font-size:.65rem;color:var(--text-muted)">Always on · Public IP · Scales</div>
+        </div>
+        <div style="font-size:.9rem;color:var(--blue)">↓ serve</div>
+        <div style="display:flex;gap:10px">
+          <div style="text-align:center"><div style="font-size:1.2rem">👩‍💻</div><div style="font-size:.62rem;color:var(--text-muted)">Friend A</div></div>
+          <div style="text-align:center"><div style="font-size:1.2rem">👨‍💻</div><div style="font-size:.62rem;color:var(--text-muted)">Friend B</div></div>
+          <div style="text-align:center"><div style="font-size:1.2rem">🧑‍💻</div><div style="font-size:.62rem;color:var(--text-muted)">Anywhere</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 14: What Happens When Traffic Grows? (intro) -->
+<section class="slide" id="slide-14" data-section="Section C: How Cloud Evolved" data-title="What Happens When Your Website Gets Popular?">
+  <span class="section-badge">Section C · Slide 14 of 38</span>
+  <h2 class="slide-title">What Happens When Your Website <span class="accent">Gets Popular</span>?</h2>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="card" style="border-color:var(--green)">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="font-size:1.5rem">😊</span>
+            <div><div style="font-weight:700;color:var(--green);font-size:.85rem">10 visitors / day</div><div style="font-size:.72rem;color:var(--text-secondary)">Works great — server is relaxed</div></div>
+          </div>
+        </div>
+        <div class="card" style="border-color:var(--blue)">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="font-size:1.5rem">🙂</span>
+            <div><div style="font-weight:700;color:var(--blue);font-size:.85rem">100 visitors / day</div><div style="font-size:.72rem;color:var(--text-secondary)">Still managing, response slightly slower</div></div>
+          </div>
+        </div>
+        <div class="card" style="border-color:var(--accent)">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="font-size:1.5rem">😰</span>
+            <div><div style="font-weight:700;color:var(--accent);font-size:.85rem">1,000 visitors / day</div><div style="font-size:.72rem;color:var(--text-secondary)">Server struggling — pages load slowly</div></div>
+          </div>
+        </div>
+        <div class="card" style="border-color:var(--red)">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="font-size:1.5rem">💥</span>
+            <div><div style="font-weight:700;color:var(--red);font-size:.85rem">10,000 visitors / day</div><div style="font-size:.72rem;color:var(--text-secondary)">Site crashes — server overwhelmed</div></div>
+          </div>
+        </div>
+        <p class="source-note">Note: These visitor counts are illustrative. Actual capacity depends on server specifications, application design, and workload type.</p>
+      </div>
+      <div>
+        <div class="highlight-box" style="margin-bottom:14px">
+          <strong>This is the scalability problem.</strong> Traditional on-premises infrastructure required buying more hardware in advance, which took weeks. By the time hardware arrived, the traffic spike might be over.
+        </div>
+        <div class="analogy-box">
+          <strong>Cloud solution:</strong> With AWS, you can add more computing resources in minutes — and release them when traffic drops, so you only pay for what you use. This concept is called <strong>scalability</strong>, and we'll explore it in detail soon.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION D: INTRODUCTION TO AWS — Slides 15-16
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- SLIDE 15: What Is AWS? -->
+<section class="slide" id="slide-15" data-section="Section D: Introduction to AWS" data-title="What Is AWS?">
+  <span class="section-badge">Section D · Slide 15 of 38</span>
+  <h2 class="slide-title">What Is <span class="accent">AWS</span>?</h2>
+  <p class="slide-subtitle">Amazon Web Services — a cloud platform offering 200+ services to millions of customers worldwide.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:flex-start">
+      <div>
+        <div class="arch-diagram">
+          <div class="arch-layer">
+            <div class="flow-box" style="display:flex;align-items:center;gap:6px;padding:8px 16px"><span>👤</span> Users / Businesses</div>
+          </div>
+          <div style="font-size:.9rem;color:var(--text-muted)">↓ internet</div>
+          <div class="arch-layer">
+            <div class="flow-box blue" style="padding:8px 16px">🌐 AWS Global Network</div>
+          </div>
+          <div style="font-size:.9rem;color:var(--text-muted)">↓</div>
+          <div class="arch-layer" style="gap:8px;flex-wrap:wrap;justify-content:center">
+            <div class="flow-box accent" style="font-size:.7rem;padding:6px 10px">💻 EC2<br>Compute</div>
+            <div class="flow-box green" style="font-size:.7rem;padding:6px 10px">📦 S3<br>Storage</div>
+            <div class="flow-box blue" style="font-size:.7rem;padding:6px 10px">🗄️ RDS<br>Database</div>
+            <div class="flow-box" style="font-size:.7rem;padding:6px 10px;border-color:var(--purple);color:var(--purple)">🤖 AI/ML<br>Services</div>
+          </div>
+          <div style="font-size:.9rem;color:var(--text-muted)">↓</div>
+          <div class="arch-layer">
+            <div class="flow-box" style="padding:8px 16px">📱 Your Application &amp; Data</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:.82rem;color:var(--text-secondary);line-height:1.7;margin-bottom:12px">AWS provides on-demand access to computing, storage, networking, databases, analytics, machine learning, and more — without buying or managing physical hardware.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+          <div class="card"><div style="font-size:1.2rem;margin-bottom:4px">🌍</div><div style="font-size:.72rem;font-weight:700;color:var(--accent)">Global Regions</div><div style="font-size:.67rem;color:var(--text-muted)">Data centers worldwide</div></div>
+          <div class="card"><div style="font-size:1.2rem;margin-bottom:4px">⚡</div><div style="font-size:.72rem;font-weight:700;color:var(--blue)">On-Demand</div><div style="font-size:.67rem;color:var(--text-muted)">Start in minutes</div></div>
+          <div class="card"><div style="font-size:1.2rem;margin-bottom:4px">💳</div><div style="font-size:.72rem;font-weight:700;color:var(--green)">Pay-as-you-go</div><div style="font-size:.67rem;color:var(--text-muted)">No upfront commitments needed</div></div>
+          <div class="card"><div style="font-size:1.2rem;margin-bottom:4px">🔒</div><div style="font-size:.72rem;font-weight:700;color:var(--purple)">Shared Security</div><div style="font-size:.67rem;color:var(--text-muted)">Provider &amp; customer responsibility</div></div>
+        </div>
+        <p class="source-note mt-sm"><a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank" rel="noopener">aws.amazon.com/what-is-cloud-computing</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 16: Two Services We'll Learn Today -->
+<section class="slide" id="slide-16" data-section="Section D: Introduction to AWS" data-title="EC2 and S3 Introduction">
+  <span class="section-badge">Section D · Slide 16 of 38</span>
+  <h2 class="slide-title">Two Services We Learn <span class="accent">Today</span></h2>
+  <div class="slide-body" style="justify-content:center">
+    <div class="two-col" style="gap:28px;align-items:center">
+      <div class="card accent-border" style="text-align:center;padding:32px 28px">
+        <div style="font-size:3rem;margin-bottom:10px">💻</div>
+        <h3 style="font-size:1.1rem;font-weight:800;color:var(--accent);margin-bottom:8px">Amazon EC2</h3>
+        <div style="font-size:.8rem;color:var(--text-secondary);line-height:1.6;margin-bottom:14px">Elastic Compute Cloud — provides virtual servers called "instances" that you can launch and manage on-demand.</div>
+        <div class="analogy-box" style="text-align:left">
+          <strong>Analogy:</strong> Like renting a computer in the cloud — you choose the size, OS, and software, then pay for the time you use it.
+        </div>
+        <div class="analogy-disclaimer">Simplified analogy; actual service includes networking, storage options, security, and many configurable settings.</div>
+      </div>
+      <div class="card" style="border-color:var(--blue);text-align:center;padding:32px 28px">
+        <div style="font-size:3rem;margin-bottom:10px">📦</div>
+        <h3 style="font-size:1.1rem;font-weight:800;color:var(--blue);margin-bottom:8px">Amazon S3</h3>
+        <div style="font-size:.8rem;color:var(--text-secondary);line-height:1.6;margin-bottom:14px">Simple Storage Service — object storage designed to store and retrieve any amount of data from anywhere on the internet.</div>
+        <div class="analogy-box" style="text-align:left">
+          <strong>Analogy:</strong> Like renting a place to keep your files — photos, videos, documents — accessible anytime, from anywhere.
+        </div>
+        <div class="analogy-disclaimer">Simplified analogy; S3 is object storage, not a conventional filesystem or hard drive.</div>
+      </div>
+    </div>
+    <div class="highlight-box mt-md" style="text-align:center">
+      <strong>EC2 is where your application <em>runs</em>. S3 is where your application keeps its <em>files</em>.</strong> — Together, they power millions of applications worldwide.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION E: AMAZON EC2 & VIRTUAL MACHINES — Slides 17-22
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- SLIDE 17: What Is Amazon EC2? -->
+<section class="slide" id="slide-17" data-section="Section E: Amazon EC2 & VMs" data-title="What Is Amazon EC2?">
+  <span class="section-badge">Section E · Slide 17 of 38</span>
+  <h2 class="slide-title">What Is <span class="accent">Amazon EC2</span>?</h2>
+  <p class="slide-subtitle">Elastic Compute Cloud — virtual servers in the cloud, on-demand.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:flex-start">
+      <div>
+        <ul class="bullet-list" style="margin-bottom:14px">
+          <li>EC2 provides <strong style="color:var(--accent)">virtual servers</strong> called <strong style="color:var(--accent)">instances</strong></li>
+          <li>Launch in minutes — choose your <strong style="color:var(--accent)">operating system</strong> (Linux or Windows)</li>
+          <li>Pick the amount of <strong style="color:var(--accent)">CPU, RAM, and storage</strong> you need</li>
+          <li>Connect to it remotely and run your application</li>
+          <li>Stop it when you're done and stop paying</li>
+        </ul>
+        <div class="card mt-sm" style="border-color:var(--accent)">
+          <div class="card-title">Key Terms</div>
+          <div style="display:flex;flex-direction:column;gap:6px;font-size:.75rem">
+            <div><span style="color:var(--accent);font-weight:700">Instance</span> — A running virtual server on EC2</div>
+            <div><span style="color:var(--blue);font-weight:700">CPU (vCPU)</span> — The processing brain of your instance (virtual CPU)</div>
+            <div><span style="color:var(--green);font-weight:700">RAM</span> — Temporary working memory for running programs</div>
+            <div><span style="color:var(--purple);font-weight:700">Storage</span> — Persistent space where your data and OS are saved</div>
+            <div><span style="color:var(--accent-light);font-weight:700">OS</span> — Operating system (software managing hardware &amp; programs)</div>
+          </div>
+        </div>
+        <p class="source-note mt-sm"><a href="https://aws.amazon.com/ec2/" target="_blank" rel="noopener">aws.amazon.com/ec2</a></p>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+        <div class="card" style="width:100%;border-color:var(--blue)">
+          <div style="font-size:.72rem;font-weight:700;color:var(--text-muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em">Example: Website on EC2</div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="background:var(--bg-card2);border-radius:6px;padding:8px 12px;font-size:.72rem">
+              <span style="color:var(--accent)">EC2 Instance</span> running Ubuntu Linux
+            </div>
+            <div style="background:var(--bg-card2);border-radius:6px;padding:8px 12px;font-size:.72rem">
+              Web server software (e.g., Nginx) installed
+            </div>
+            <div style="background:var(--bg-card2);border-radius:6px;padding:8px 12px;font-size:.72rem">
+              Your website files deployed on the instance
+            </div>
+            <div style="background:rgba(46,204,113,.08);border:1px solid var(--green);border-radius:6px;padding:8px 12px;font-size:.72rem;color:var(--green)">
+              ✓ Publicly accessible at yourdomain.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 18: What Is a Virtual Machine? -->
+<section class="slide" id="slide-18" data-section="Section E: Amazon EC2 & VMs" data-title="What Is a Virtual Machine?">
+  <span class="section-badge">Section E · Slide 18 of 38</span>
+  <h2 class="slide-title">What Is a <span class="accent">Virtual Machine</span>?</h2>
+  <p class="slide-subtitle">Software-created computer that runs inside another computer.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:center">
+      <div>
+        <div class="highlight-box" style="margin-bottom:14px">
+          A <strong>virtual machine (VM)</strong> is a software-created computer that runs its own operating system and applications — using resources provided by a physical host machine.
+        </div>
+        <div class="analogy-box">
+          <strong>Building and Apartments Analogy:</strong><br><br>
+          🏢 One physical <strong>building</strong> (the real hardware)<br>
+          🏠 Several independent <strong>apartments</strong> (virtual machines)<br>
+          👨‍👩‍👧 Each apartment has its own <strong>occupants</strong> (OS &amp; apps)<br>
+          ⚙️ The <strong>building management</strong> allocates shared resources<br>
+          🔒 Apartments are <strong>isolated</strong> from each other
+        </div>
+        <div class="analogy-disclaimer mt-sm">Each VM is isolated — problems in one VM don't automatically affect others, like how one apartment's issues don't flood the whole building.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+        <div style="background:rgba(155,89,182,.1);border:2px solid var(--purple);border-radius:var(--radius);padding:14px 20px;width:100%;text-align:center">
+          <div style="font-size:.75rem;font-weight:700;color:var(--purple);margin-bottom:4px">🏢 Physical Server (Building)</div>
+          <div style="font-size:.67rem;color:var(--text-muted)">Real CPU · Real RAM · Real Storage</div>
+        </div>
+        <div style="display:flex;gap:8px;width:100%">
+          <div style="background:rgba(46,204,113,.07);border:1.5px solid var(--green);border-radius:var(--radius-sm);padding:10px;flex:1;text-align:center;font-size:.68rem">
+            <div style="font-weight:700;color:var(--green);margin-bottom:3px">VM 1 🏠</div>
+            <div style="color:var(--text-muted)">Linux OS<br>Web App</div>
+          </div>
+          <div style="background:rgba(46,204,113,.07);border:1.5px solid var(--green);border-radius:var(--radius-sm);padding:10px;flex:1;text-align:center;font-size:.68rem">
+            <div style="font-weight:700;color:var(--green);margin-bottom:3px">VM 2 🏠</div>
+            <div style="color:var(--text-muted)">Windows OS<br>Database</div>
+          </div>
+          <div style="background:rgba(46,204,113,.07);border:1.5px solid var(--green);border-radius:var(--radius-sm);padding:10px;flex:1;text-align:center;font-size:.68rem">
+            <div style="font-weight:700;color:var(--green);margin-bottom:3px">VM 3 🏠</div>
+            <div style="color:var(--text-muted)">Linux OS<br>API Server</div>
+          </div>
+        </div>
+        <div style="font-size:.68rem;color:var(--text-muted);text-align:center">All three VMs run on the same physical machine, isolated from each other</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 19: VM Architecture Diagram -->
+<section class="slide" id="slide-19" data-section="Section E: Amazon EC2 & VMs" data-title="VM Architecture Diagram">
+  <span class="section-badge">Section E · Slide 19 of 38</span>
+  <h2 class="slide-title">Virtual Machine <span class="accent">Architecture</span></h2>
+  <p class="slide-subtitle">Click each layer to learn more. <button class="ctrl-btn" style="font-size:.65rem;padding:2px 8px" onclick="revealVMLayer()">▶ Reveal Next Layer</button></p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:center">
+      <div class="vm-diagram" id="vm-diagram">
+        <div class="vm-layer hw" id="vml-hw" onclick="showVMInfo('hw')" tabindex="0" role="button" aria-label="Physical Hardware layer">
+          <div class="vm-layer-title">🖥️ Physical Hardware / Host Server</div>
+          <div class="vm-layer-sub">CPU · RAM · Storage · Network Interfaces</div>
+        </div>
+        <div style="font-size:.75rem;color:var(--text-muted);opacity:0;transition:opacity .4s" id="vml-arr1">↓ managed by</div>
+        <div class="vm-layer hyper" id="vml-hyper" onclick="showVMInfo('hyper')" tabindex="0" role="button" aria-label="Hypervisor layer">
+          <div class="vm-layer-title">⚙️ Hypervisor / Virtualization Layer</div>
+          <div class="vm-layer-sub">Creates and manages VMs · Allocates physical resources</div>
+        </div>
+        <div style="font-size:.75rem;color:var(--text-muted);opacity:0;transition:opacity .4s" id="vml-arr2">↓ runs</div>
+        <div class="vm-row" id="vml-vms">
+          <div class="vm-box" id="vmb-1">
+            <div class="vm-box-title">VM 1</div>
+            <div class="vm-box-detail">Guest OS<br>App A<br>vCPU · vRAM</div>
+          </div>
+          <div class="vm-box" id="vmb-2">
+            <div class="vm-box-title">VM 2</div>
+            <div class="vm-box-detail">Guest OS<br>App B<br>vCPU · vRAM</div>
+          </div>
+          <div class="vm-box" id="vmb-3">
+            <div class="vm-box-title">VM 3</div>
+            <div class="vm-box-detail">Guest OS<br>App C<br>vCPU · vRAM</div>
+          </div>
+        </div>
+      </div>
+      <div id="vm-info-panel" style="display:flex;flex-direction:column;gap:10px">
+        <div class="card" style="border-color:var(--purple)">
+          <div class="card-title purple">Type 1 Hypervisor</div>
+          <p style="font-size:.74rem;color:var(--text-secondary);line-height:1.5">Runs directly on physical hardware without a host OS. Example: VMware ESXi. More efficient for data centers. AWS uses custom virtualization technology (including a modified KVM for Nitro-based instances).</p>
+        </div>
+        <div class="card" style="border-color:var(--blue)">
+          <div class="card-title blue">Type 2 Hypervisor</div>
+          <p style="font-size:.74rem;color:var(--text-secondary);line-height:1.5">Runs on top of a regular host operating system. Example: VirtualBox on your laptop. Easier to set up, but adds an extra software layer.</p>
+        </div>
+        <div class="analogy-box">
+          <strong>For EC2:</strong> AWS manages the physical hardware and virtualization stack. You interact only with your virtual instance. The exact implementation varies by instance type and AWS architecture.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 20: From VM to EC2 Instance -->
+<section class="slide" id="slide-20" data-section="Section E: Amazon EC2 & VMs" data-title="From VM to EC2 Instance">
+  <span class="section-badge">Section E · Slide 20 of 38</span>
+  <h2 class="slide-title">From Virtual Machine to <span class="accent">EC2 Instance</span></h2>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:flex-start">
+      <div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div class="step-item"><div class="step-num">1</div><div class="step-content"><strong style="color:var(--purple)">Physical Server</strong> — AWS-owned data center hardware with CPU, RAM, and storage.</div></div>
+          <div class="step-item"><div class="step-num">2</div><div class="step-content"><strong style="color:var(--blue)">Virtualization</strong> — AWS's virtualization stack (including the Nitro System) divides the hardware into isolated virtual environments.</div></div>
+          <div class="step-item"><div class="step-num">3</div><div class="step-content"><strong style="color:var(--green)">EC2 Instance</strong> — A virtual server you can launch, configured with your chosen OS, compute, storage, and network settings.</div></div>
+          <div class="step-item"><div class="step-num">4</div><div class="step-content"><strong style="color:var(--accent)">You Take Control</strong> — Connect remotely, install software, deploy your application.</div></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="card accent-border">
+          <div class="card-title">What You Choose When Launching EC2</div>
+          <ul class="bullet-list">
+            <li><strong style="color:var(--accent)">AMI</strong> — Amazon Machine Image: the OS template (e.g., Amazon Linux, Ubuntu, Windows Server)</li>
+            <li><strong style="color:var(--blue)">Instance Type</strong> — How much vCPU and RAM (e.g., t3.micro, m5.large)</li>
+            <li><strong style="color:var(--green)">Storage</strong> — Attached EBS volume size</li>
+            <li><strong style="color:var(--purple)">Network &amp; Security</strong> — VPC, subnet, security group rules</li>
+          </ul>
+        </div>
+        <div class="analogy-box">
+          <strong>AMI explained:</strong> Think of an AMI like a pre-installed computer image — it contains the OS and any pre-installed software. You choose the image, and EC2 launches a new virtual server from it.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 21: Choosing EC2 Instance Size -->
+<section class="slide" id="slide-21" data-section="Section E: Amazon EC2 & VMs" data-title="Choosing Your EC2 Instance Size">
+  <span class="section-badge">Section E · Slide 21 of 38</span>
+  <h2 class="slide-title">Choosing Your <span class="accent">EC2 Instance Size</span></h2>
+  <p class="slide-subtitle">Different workloads need different resources. These are illustrative examples, not recommendations.</p>
+  <div class="slide-body">
+    <div style="display:flex;flex-direction:column;gap:10px;flex:1;justify-content:center">
+      <div class="card" style="border-color:var(--green)">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="font-size:1.8rem">🌱</div>
+          <div style="flex:1">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+              <div style="font-weight:700;color:var(--green)">Small Website / Dev &amp; Test</div>
+              <span class="tag green">e.g. t3.micro</span>
+            </div>
+            <div style="font-size:.72rem;color:var(--text-secondary)">~2 vCPU · ~1 GB RAM · General Purpose · Low traffic, development, testing</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="border-color:var(--blue)">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="font-size:1.8rem">🌿</div>
+          <div style="flex:1">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+              <div style="font-weight:700;color:var(--blue)">Medium Application / Web Server</div>
+              <span class="tag blue">e.g. m5.large</span>
+            </div>
+            <div style="font-size:.72rem;color:var(--text-secondary)">~2 vCPU · ~8 GB RAM · Balanced Memory &amp; CPU · Moderate traffic web app or API service</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="border-color:var(--accent)">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="font-size:1.8rem">🌳</div>
+          <div style="flex:1">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+              <div style="font-weight:700;color:var(--accent)">Compute-Heavy Workload</div>
+              <span class="tag">e.g. c5.2xlarge</span>
+            </div>
+            <div style="font-size:.72rem;color:var(--text-secondary)">~8 vCPU · ~16 GB RAM · Compute Optimized · Data processing, scientific workloads, batch jobs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="analogy-box mt-sm">
+      <strong>Instance families:</strong> EC2 has many instance families (T = burstable, M = general purpose, C = compute optimized, R = memory optimized, etc.). Instance family + size + price together determine the right choice for your workload. Always consult the AWS pricing page and documentation for current specifications.
+    </div>
+    <p class="source-note mt-sm">Specifications shown are illustrative. Actual vCPU, RAM, and pricing vary. See <a href="https://aws.amazon.com/ec2/instance-types/" target="_blank" rel="noopener">aws.amazon.com/ec2/instance-types</a></p>
+  </div>
+</section>
+
+<!-- SLIDE 22: EC2 Security -->
+<section class="slide" id="slide-22" data-section="Section E: Amazon EC2 & VMs" data-title="How Do We Protect an EC2 Instance?">
+  <span class="section-badge">Section E · Slide 22 of 38</span>
+  <h2 class="slide-title">Protecting Your <span class="accent">EC2 Instance</span></h2>
+  <p class="slide-subtitle">Security groups act as virtual firewalls controlling allowed network traffic.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:center">
+      <div>
+        <div class="analogy-box" style="margin-bottom:12px">
+          <strong>House analogy:</strong><br>
+          🏠 EC2 Instance = your house<br>
+          🚪 Security Group = rules about who can knock on which door<br>
+          🔑 SSH/RDP = keys for authorized admins to enter<br>
+          🌐 Internet = the neighborhood outside
+        </div>
+        <ul class="bullet-list">
+          <li><strong style="color:var(--accent)">Security Groups</strong> — virtual firewall rules for inbound and outbound traffic</li>
+          <li><strong style="color:var(--blue)">Inbound rules</strong> — what traffic is allowed TO reach your instance</li>
+          <li><strong style="color:var(--green)">Outbound rules</strong> — what traffic your instance can send OUT</li>
+          <li><strong style="color:var(--purple)">SSH (port 22)</strong> — Linux remote admin (restrict to trusted IPs only)</li>
+          <li><strong style="color:var(--accent-light)">RDP (port 3389)</strong> — Windows remote admin (restrict to trusted IPs)</li>
+          <li><strong style="color:var(--green)">HTTP/HTTPS</strong> — web traffic, typically open to internet</li>
+        </ul>
+        <div class="card mt-sm" style="border-color:var(--red);background:rgba(231,76,60,.05)">
+          <div style="font-size:.75rem;color:var(--red);font-weight:700;margin-bottom:4px">⚠️ Security Best Practice</div>
+          <p style="font-size:.72rem;color:var(--text-secondary);line-height:1.5">Never open all ports to the internet (0.0.0.0/0) for SSH or RDP. Allow administrative access only from specific trusted IP addresses. Follow the principle of least privilege.</p>
+        </div>
+      </div>
+      <div class="sg-diagram">
+        <div class="sg-user">
+          <div class="sg-icon">👤</div>
+          <div style="font-size:.7rem;color:var(--text-secondary)">User Request</div>
+        </div>
+        <div style="font-size:.9rem;color:var(--text-muted)">↓</div>
+        <div style="font-size:.7rem;color:var(--blue)">🌐 Internet</div>
+        <div style="font-size:.9rem;color:var(--text-muted)">↓</div>
+        <div class="sg-box" style="width:90%">
+          <div class="sg-badge">Security Group</div>
+          <div style="display:flex;flex-direction:column;gap:5px;font-size:.68rem;margin-bottom:10px">
+            <div style="background:rgba(46,204,113,.1);border:1px solid var(--green);border-radius:4px;padding:4px 8px;color:var(--green)">✓ Allow HTTP (80) from 0.0.0.0/0</div>
+            <div style="background:rgba(46,204,113,.1);border:1px solid var(--green);border-radius:4px;padding:4px 8px;color:var(--green)">✓ Allow HTTPS (443) from 0.0.0.0/0</div>
+            <div style="background:rgba(255,153,0,.1);border:1px solid var(--accent);border-radius:4px;padding:4px 8px;color:var(--accent)">✓ Allow SSH (22) from YOUR-IP only</div>
+            <div style="background:rgba(231,76,60,.1);border:1px solid var(--red);border-radius:4px;padding:4px 8px;color:var(--red)">✗ Deny all other inbound traffic</div>
+          </div>
+          <div class="sg-instance">🖥️ EC2 Instance</div>
+        </div>
+        <p class="source-note" style="text-align:center"><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html" target="_blank" rel="noopener">EC2 Security Groups Docs</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION F: SCALING — Slides 23-26
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- SLIDE 23: Traffic Growth Interactive -->
+<section class="slide" id="slide-23" data-section="Section F: Scaling" data-title="What Happens When Traffic Grows?">
+  <span class="section-badge">Section F · Slide 23 of 38</span>
+  <h2 class="slide-title">When <span class="accent">Traffic Grows</span>, What Happens?</h2>
+  <p class="slide-subtitle">Move the slider to simulate traffic load. This is conceptual — actual capacity depends on application design and instance type.</p>
+  <div class="slide-body">
+    <div class="scaling-demo">
+      <div class="slider-wrapper">
+        <label for="traffic-slider">Daily Visitors:</label>
+        <input type="range" id="traffic-slider" min="0" max="3" value="0" step="1" aria-label="Simulated traffic level" oninput="updateTrafficDemo(this.value)">
+        <span class="slider-value" id="traffic-val">10</span>
+      </div>
+      <div id="traffic-status" style="font-size:.8rem;color:var(--green);font-weight:700;min-height:22px">✓ Server is handling traffic comfortably</div>
+      <div class="server-grid" id="server-grid">
+        <div class="server-chip active" id="main-server"><div class="s-icon">🖥️</div><div class="s-label">Server 1</div><div id="server-cpu" style="font-size:.62rem;color:var(--green)">CPU: 5%</div></div>
+      </div>
+      <div id="traffic-advice" class="analogy-box" style="width:80%;text-align:center">
+        With 10 visitors, a single small server handles everything easily. The CPU is barely working.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 24: Vertical Scaling -->
+<section class="slide" id="slide-24" data-section="Section F: Scaling" data-title="Vertical Scaling">
+  <span class="section-badge">Section F · Slide 24 of 38</span>
+  <h2 class="slide-title"><span class="accent">Vertical</span> Scaling</h2>
+  <p class="slide-subtitle">Make your existing server more powerful. Also called "scaling up".</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:center">
+      <div>
+        <div class="highlight-box" style="margin-bottom:14px">
+          <strong>Vertical scaling</strong> = taking your existing server and giving it more resources: more CPU, more RAM, more storage.
+        </div>
+        <ul class="bullet-list" style="margin-bottom:12px">
+          <li><strong style="color:var(--green)">Pros:</strong> Simple — same server, same setup, no code changes</li>
+          <li><strong style="color:var(--green)">Pros:</strong> Good for many single-instance workloads</li>
+          <li><strong style="color:var(--red)">Cons:</strong> Physical limits — you can only make one server so big</li>
+          <li><strong style="color:var(--red)">Cons:</strong> May require a restart or brief interruption to change instance type</li>
+          <li><strong style="color:var(--red)">Cons:</strong> Single point of failure remains</li>
+        </ul>
+        <div class="analogy-box">
+          <strong>Analogy:</strong> Like upgrading your laptop from 8 GB RAM to 32 GB RAM. Same machine, more power.
+        </div>
+      </div>
+      <div class="v-scale-demo">
+        <div style="font-size:.78rem;color:var(--text-secondary);margin-bottom:6px">Click to scale up ↓</div>
+        <div class="server-visual" id="v-scale-server" onclick="toggleVerticalScale()" tabindex="0" role="button" aria-label="Click to scale server vertically">
+          <div class="sv-icon">🖥️</div>
+          <div class="sv-label" id="v-scale-label" style="color:var(--text-secondary)">t3.small</div>
+          <div class="resource-bar">
+            <div class="resource-row"><div class="res-label" style="font-size:.6rem">vCPU</div><div class="res-track"><div class="res-fill cpu" id="vr-cpu" style="width:25%"></div></div></div>
+            <div class="resource-row"><div class="res-label" style="font-size:.6rem">RAM</div><div class="res-track"><div class="res-fill ram" id="vr-ram" style="width:20%"></div></div></div>
+            <div class="resource-row"><div class="res-label" style="font-size:.6rem">SSD</div><div class="res-track"><div class="res-fill ssd" id="vr-ssd" style="width:15%"></div></div></div>
+          </div>
+        </div>
+        <div style="font-size:.68rem;color:var(--text-muted);text-align:center" id="v-scale-hint">Click the server to upgrade it</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 25: Horizontal Scaling -->
+<section class="slide" id="slide-25" data-section="Section F: Scaling" data-title="Horizontal Scaling">
+  <span class="section-badge">Section F · Slide 25 of 38</span>
+  <h2 class="slide-title"><span class="accent">Horizontal</span> Scaling</h2>
+  <p class="slide-subtitle">Add more servers to distribute the work. Also called "scaling out".</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:center">
+      <div>
+        <div class="highlight-box" style="margin-bottom:14px">
+          <strong>Horizontal scaling</strong> = adding more servers and distributing traffic across all of them using a <strong>load balancer</strong>.
+        </div>
+        <ul class="bullet-list" style="margin-bottom:12px">
+          <li><strong style="color:var(--green)">Pros:</strong> Can handle much higher aggregate traffic</li>
+          <li><strong style="color:var(--green)">Pros:</strong> If one server fails, others keep serving traffic</li>
+          <li><strong style="color:var(--green)">Pros:</strong> Scale up and down dynamically</li>
+          <li><strong style="color:var(--red)">Cons:</strong> Requires suitable application architecture</li>
+          <li><strong style="color:var(--red)">Cons:</strong> Shared data and sessions need careful design</li>
+          <li><strong style="color:var(--red)">Cons:</strong> More infrastructure to manage</li>
+        </ul>
+        <div class="analogy-box">
+          <strong>Analogy:</strong> Instead of one very fast cashier, open more checkout lanes. Each handles some customers — together they serve everyone faster.
+        </div>
+      </div>
+      <div class="h-scale-demo">
+        <div style="font-size:.72rem;color:var(--text-secondary);margin-bottom:4px">Click to add instances ↓</div>
+        <div class="lb-row">
+          <div class="lb-box">🔀 Load Balancer<br><span style="font-size:.62rem;font-weight:400">Distributes traffic evenly</span></div>
+        </div>
+        <div class="connector-v"></div>
+        <div class="inst-row" id="h-scale-row">
+          <div class="inst-box visible" id="h-inst-1"><div style="font-size:1.1rem">🖥️</div><div style="font-size:.65rem;color:var(--green)">Instance 1</div><div style="font-size:.6rem;color:var(--text-muted)">Running</div></div>
+          <div class="inst-box" id="h-inst-2"><div style="font-size:1.1rem">🖥️</div><div style="font-size:.65rem;color:var(--green)">Instance 2</div><div style="font-size:.6rem;color:var(--text-muted)">+Scaling</div></div>
+          <div class="inst-box" id="h-inst-3"><div style="font-size:1.1rem">🖥️</div><div style="font-size:.65rem;color:var(--green)">Instance 3</div><div style="font-size:.6rem;color:var(--text-muted)">+Scaling</div></div>
+          <div class="inst-box" id="h-inst-4"><div style="font-size:1.1rem">🖥️</div><div style="font-size:.65rem;color:var(--green)">Instance 4</div><div style="font-size:.6rem;color:var(--text-muted)">+Scaling</div></div>
+        </div>
+        <button class="ctrl-btn" style="margin-top:8px" onclick="addHorizontalInstance()" aria-label="Add another instance">+ Add Instance</button>
+        <button class="ctrl-btn" style="margin-top:4px" onclick="resetHorizontalScale()" aria-label="Reset horizontal scaling demo">↺ Reset</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 26: Vertical vs Horizontal Comparison -->
+<section class="slide" id="slide-26" data-section="Section F: Scaling" data-title="Vertical vs Horizontal Scaling">
+  <span class="section-badge">Section F · Slide 26 of 38</span>
+  <h2 class="slide-title">Vertical <span class="accent">vs.</span> Horizontal Scaling</h2>
+  <div class="slide-body">
+    <table class="compare-table" style="flex:1">
+      <thead>
+        <tr>
+          <th class="col-feature">Aspect</th>
+          <th style="color:var(--blue)">⬆ Vertical (Scale Up)</th>
+          <th style="color:var(--green)">➡ Horizontal (Scale Out)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>What changes</td><td>One server gets more resources</td><td>More servers are added</td></tr>
+        <tr><td>Complexity</td><td>Simpler — same codebase, same config</td><td>More complex — load balancer, stateless design needed</td></tr>
+        <tr><td>Upper limit</td><td>Limited by max available instance size</td><td>Can add many instances; higher aggregate capacity possible</td></tr>
+        <tr><td>Downtime risk</td><td>May require restart to change instance type</td><td>New instances added while existing ones keep running</td></tr>
+        <tr><td>Failure impact</td><td>If one server fails, service is down</td><td>Other instances continue serving traffic</td></tr>
+        <tr><td>Cost pattern</td><td>Larger instances cost more per unit</td><td>Pay for each instance; scale down when not needed</td></tr>
+        <tr><td>AWS tools</td><td>Stop → Change instance type → Start</td><td>Auto Scaling Groups + Load Balancer</td></tr>
+      </tbody>
+    </table>
+    <div class="analogy-box mt-sm">
+      <strong>Real-world practice:</strong> Most production systems use both. Start with vertical scaling for simplicity, then add horizontal scaling as traffic grows. AWS Auto Scaling can automatically add or remove instances based on demand.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION G: AMAZON S3 & STORAGE — Slides 27-32
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- SLIDE 27: What Is Amazon S3? -->
+<section class="slide" id="slide-27" data-section="Section G: Amazon S3 & Storage" data-title="What Is Amazon S3?">
+  <span class="section-badge">Section G · Slide 27 of 38</span>
+  <h2 class="slide-title">What Is <span class="accent">Amazon S3</span>?</h2>
+  <p class="slide-subtitle">Simple Storage Service — object storage for files, media, backups, and data.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:flex-start">
+      <div>
+        <div class="card accent-border" style="margin-bottom:12px">
+          <div class="card-title">3 Key Terms</div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:.78rem">
+            <div><span style="color:var(--accent);font-weight:700">Bucket</span> — A container that holds your objects. Like a top-level folder. Bucket names must be globally unique across all AWS accounts.</div>
+            <div><span style="color:var(--blue);font-weight:700">Object</span> — The file itself plus its metadata (size, type, tags, etc.). Can be photos, videos, PDFs, code, datasets — anything.</div>
+            <div><span style="color:var(--green);font-weight:700">Key</span> — The unique name (path) that identifies an object within a bucket. Works like a filename.</div>
+          </div>
+        </div>
+        <div style="background:var(--bg-card2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 16px;font-family:var(--font-mono);font-size:.72rem">
+          <div style="color:var(--accent);margin-bottom:6px">📦 Bucket: college-project-files</div>
+          <div style="padding-left:14px;color:var(--text-secondary)">
+            <div>📷 images/campus.jpg</div>
+            <div>🎬 videos/demo.mp4</div>
+            <div>📄 reports/project.pdf</div>
+            <div>🗃️ backups/data-2024.zip</div>
+          </div>
+        </div>
+        <div class="analogy-disclaimer mt-sm">Bucket and key names shown are illustrative examples only.</div>
+      </div>
+      <div>
+        <p style="font-size:.82rem;color:var(--text-secondary);line-height:1.7;margin-bottom:12px">S3 can store virtually any amount of data. It's designed for:</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+          <div class="card"><div style="font-size:1.1rem;margin-bottom:3px">🖼️</div><div style="font-size:.7rem;color:var(--text-secondary)">Photos &amp; Images</div></div>
+          <div class="card"><div style="font-size:1.1rem;margin-bottom:3px">🎬</div><div style="font-size:.7rem;color:var(--text-secondary)">Videos &amp; Media</div></div>
+          <div class="card"><div style="font-size:1.1rem;margin-bottom:3px">📄</div><div style="font-size:.7rem;color:var(--text-secondary)">Documents &amp; PDFs</div></div>
+          <div class="card"><div style="font-size:1.1rem;margin-bottom:3px">💾</div><div style="font-size:.7rem;color:var(--text-secondary)">Backups &amp; Archives</div></div>
+          <div class="card"><div style="font-size:1.1rem;margin-bottom:3px">📊</div><div style="font-size:.7rem;color:var(--text-secondary)">Datasets</div></div>
+          <div class="card"><div style="font-size:1.1rem;margin-bottom:3px">🌐</div><div style="font-size:.7rem;color:var(--text-secondary)">Website Assets</div></div>
+        </div>
+        <div class="analogy-box mt-sm">
+          <strong>Important:</strong> S3 is <em>object storage</em>, not a conventional hard drive or filesystem. You can't "run programs" from S3 directly — it's for storing and retrieving files.
+        </div>
+        <p class="source-note mt-sm"><a href="https://aws.amazon.com/s3/" target="_blank" rel="noopener">aws.amazon.com/s3</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 28: EC2 vs S3 -->
+<section class="slide" id="slide-28" data-section="Section G: Amazon S3 & Storage" data-title="EC2 vs S3">
+  <span class="section-badge">Section G · Slide 28 of 38</span>
+  <h2 class="slide-title"><span class="accent">EC2</span> vs. <span class="blue">S3</span> — What's the Difference?</h2>
+  <div class="slide-body">
+    <div class="two-col" style="gap:24px;align-items:flex-start">
+      <div class="card accent-border" style="padding:22px">
+        <div style="text-align:center;margin-bottom:14px"><div style="font-size:2.2rem">💻</div><div style="font-weight:800;color:var(--accent);font-size:.95rem">Amazon EC2</div></div>
+        <ul class="bullet-list">
+          <li>Provides <strong style="color:var(--accent)">compute capacity</strong> — virtual servers</li>
+          <li>Runs operating systems and applications</li>
+          <li>Can host websites, APIs, databases, microservices</li>
+          <li>You connect, configure, and manage it</li>
+          <li>Has CPU, RAM, and attached storage (EBS)</li>
+          <li>Billed by the hour or second while running</li>
+        </ul>
+      </div>
+      <div class="card" style="border-color:var(--blue);padding:22px">
+        <div style="text-align:center;margin-bottom:14px"><div style="font-size:2.2rem">📦</div><div style="font-weight:800;color:var(--blue);font-size:.95rem">Amazon S3</div></div>
+        <ul class="bullet-list blue">
+          <li>Provides <strong style="color:var(--blue)">object storage</strong> — holds files</li>
+          <li>Stores and retrieves data objects via API</li>
+          <li>No OS to manage, no patching needed</li>
+          <li>Virtually unlimited capacity</li>
+          <li>Highly durable (designed for 99.999999999% durability)</li>
+          <li>Billed for storage used + requests made</li>
+        </ul>
+      </div>
+    </div>
+    <div class="highlight-box mt-md" style="text-align:center">
+      <strong>Working together:</strong> An EC2 instance hosts your web application. The application stores uploaded user images in S3. When users request an image, the app retrieves it from S3 and serves it.
+    </div>
+    <div class="flow-diagram mt-sm">
+      <div class="flow-box">👤 User uploads photo</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box accent">💻 EC2 (app logic)</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box blue">📦 S3 (stores photo)</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 29: S3 Versioning -->
+<section class="slide" id="slide-29" data-section="Section G: Amazon S3 & Storage" data-title="Why Do We Need S3 Versioning?">
+  <span class="section-badge">Section G · Slide 29 of 38</span>
+  <h2 class="slide-title">Why We Need <span class="accent">S3 Versioning</span></h2>
+  <p class="slide-subtitle">Accidentally overwrote your file? Versioning lets you recover it. <button class="ctrl-btn" style="font-size:.65rem;padding:2px 8px" onclick="s3SimUpload()" aria-label="Simulate upload to S3">📤 Simulate Upload</button></p>
+  <div class="slide-body">
+    <div class="s3-sim">
+      <div class="two-col" style="gap:16px;align-items:flex-start">
+        <div>
+          <div style="font-size:.78rem;color:var(--text-secondary);margin-bottom:8px;line-height:1.6"><strong>Scenario:</strong> A student uploads <code style="background:#1a2a3a;padding:1px 6px;border-radius:3px">project.docx</code>, edits it several times. Accidentally uploads a corrupted version. Without versioning — the original is gone forever.</div>
+          <ul class="bullet-list" style="margin-bottom:10px">
+            <li><strong style="color:var(--accent)">Version ID</strong> — unique identifier for each saved version</li>
+            <li><strong style="color:var(--green)">Current version</strong> — the latest upload (what users see by default)</li>
+            <li><strong style="color:var(--text-secondary)">Previous versions</strong> — preserved when versioning is enabled</li>
+            <li><strong style="color:var(--red)">Delete marker</strong> — a special "tombstone" when an object is deleted in a versioned bucket</li>
+          </ul>
+          <div class="card" style="border-color:var(--accent)">
+            <div class="card-title">Enable Versioning</div>
+            <p style="font-size:.73rem;color:var(--text-secondary);line-height:1.5">Enable on the bucket's Properties tab in the AWS Console. Note: keeping many versions increases storage costs. Versioning alone is not a substitute for a complete backup strategy.</p>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:.72rem;color:var(--text-muted);margin-bottom:6px">Version Timeline (click to "restore"):</div>
+          <div class="version-timeline" id="version-timeline">
+            <div class="version-card" onclick="selectVersion(0)" tabindex="0" role="button" aria-label="Version 1 - Original">
+              <div class="ver-id">ver: abc123</div>
+              <div class="ver-name">project.docx</div>
+              <div class="ver-meta">📄 Initial submission<br>Size: 142 KB</div>
+              <div class="ver-badge old">V1</div>
+            </div>
+            <div class="version-card" onclick="selectVersion(1)" tabindex="0" role="button" aria-label="Version 2 - Updated">
+              <div class="ver-id">ver: def456</div>
+              <div class="ver-name">project.docx</div>
+              <div class="ver-meta">📝 Added chapter 3<br>Size: 198 KB</div>
+              <div class="ver-badge old">V2</div>
+            </div>
+            <div class="version-card current" onclick="selectVersion(2)" tabindex="0" role="button" aria-label="Version 3 - Current (corrupted)">
+              <div class="ver-id">ver: ghi789</div>
+              <div class="ver-name">project.docx</div>
+              <div class="ver-meta">💥 Corrupted upload<br>Size: 2 KB</div>
+              <div class="ver-badge err">CURRENT</div>
+            </div>
+          </div>
+          <div id="version-restore-msg" class="analogy-box mt-sm" style="display:none;font-size:.75rem"></div>
+        </div>
+      </div>
+    </div>
+    <p class="source-note mt-sm"><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html" target="_blank" rel="noopener">S3 Versioning Documentation</a></p>
+  </div>
+</section>
+
+<!-- SLIDE 30: S3 Storage Classes -->
+<section class="slide" id="slide-30" data-section="Section G: Amazon S3 & Storage" data-title="S3 Storage Classes">
+  <span class="section-badge">Section G · Slide 30 of 38</span>
+  <h2 class="slide-title">S3 <span class="accent">Storage Classes</span></h2>
+  <p class="slide-subtitle">Should a file you open every day cost the same to store as one you haven't opened in five years? Click a tier to learn more.</p>
+  <div class="slide-body">
+    <div class="tier-list" id="tier-list">
+      <div class="tier-row s1" onclick="showTierInfo(0)" tabindex="0" role="button" aria-label="S3 Standard">
+        <div class="tier-name">S3 Standard</div>
+        <div class="tier-desc">Frequently accessed data — active website assets, common files</div>
+        <div class="tier-cost" style="color:#2ecc71">💲💲💲</div>
+      </div>
+      <div class="tier-row s2" onclick="showTierInfo(1)" tabindex="0" role="button" aria-label="S3 Intelligent-Tiering">
+        <div class="tier-name">S3 Intelligent-Tiering</div>
+        <div class="tier-desc">Unknown or changing access patterns — auto-moves objects between tiers</div>
+        <div class="tier-cost" style="color:#27ae60">💲💲½</div>
+      </div>
+      <div class="tier-row s3" onclick="showTierInfo(2)" tabindex="0" role="button" aria-label="S3 Standard-IA">
+        <div class="tier-name">S3 Standard-IA</div>
+        <div class="tier-desc">Infrequent access, millisecond retrieval needed — has retrieval charges</div>
+        <div class="tier-cost" style="color:#1abc9c">💲💲</div>
+      </div>
+      <div class="tier-row s4" onclick="showTierInfo(3)" tabindex="0" role="button" aria-label="S3 One Zone-IA">
+        <div class="tier-name">S3 One Zone-IA</div>
+        <div class="tier-desc">Infrequent access, single Availability Zone — lower cost, different resilience</div>
+        <div class="tier-cost" style="color:#3498db">💲½</div>
+      </div>
+      <div class="tier-row s5" onclick="showTierInfo(4)" tabindex="0" role="button" aria-label="S3 Glacier Instant Retrieval">
+        <div class="tier-name">S3 Glacier Instant Retrieval</div>
+        <div class="tier-desc">Archive data needing millisecond access — quarterly access pattern</div>
+        <div class="tier-cost" style="color:#9b59b6">💲</div>
+      </div>
+      <div class="tier-row s6" onclick="showTierInfo(5)" tabindex="0" role="button" aria-label="S3 Glacier Flexible Retrieval">
+        <div class="tier-name">S3 Glacier Flexible Retrieval</div>
+        <div class="tier-desc">Archive, retrieval in minutes to hours — longer wait, lower cost</div>
+        <div class="tier-cost" style="color:#e67e22">💲</div>
+      </div>
+      <div class="tier-row s7" onclick="showTierInfo(6)" tabindex="0" role="button" aria-label="S3 Glacier Deep Archive">
+        <div class="tier-name">S3 Glacier Deep Archive</div>
+        <div class="tier-desc">Long-term archive — retrieval in hours, lowest storage cost</div>
+        <div class="tier-cost" style="color:#e74c3c">¢</div>
+      </div>
+    </div>
+    <div id="tier-info-box" class="analogy-box mt-sm" style="display:none;font-size:.75rem"></div>
+    <p class="source-note mt-sm">Storage cost and retrieval cost are separate — a "cheap to store" class may have higher retrieval fees. See <a href="https://aws.amazon.com/s3/storage-classes/" target="_blank" rel="noopener">aws.amazon.com/s3/storage-classes</a></p>
+  </div>
+</section>
+
+<!-- SLIDE 31: S3 Glacier -->
+<section class="slide" id="slide-31" data-section="Section G: Amazon S3 & Storage" data-title="What Is S3 Glacier?">
+  <span class="section-badge">Section G · Slide 31 of 38</span>
+  <h2 class="slide-title">What Is <span class="accent">S3 Glacier</span>?</h2>
+  <p class="slide-subtitle">Archive storage for data you rarely need but must keep.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:flex-start">
+      <div>
+        <div class="analogy-box" style="margin-bottom:14px">
+          <strong>Office analogy:</strong><br>
+          📋 <strong style="color:var(--green)">Standard storage</strong> = files on your desk (instant access)<br>
+          🗂️ <strong style="color:var(--blue)">Standard-IA</strong> = files in a nearby drawer (a moment to retrieve)<br>
+          🏛️ <strong style="color:var(--accent)">Glacier</strong> = files in a long-term archive room (planned retrieval)
+          <div class="analogy-disclaimer mt-sm">These are analogies. Actual retrieval times depend on which Glacier storage class and retrieval option you choose.</div>
+        </div>
+        <ul class="bullet-list" style="margin-bottom:10px">
+          <li>Old project submissions kept for compliance</li>
+          <li>Historical financial reports (7+ years)</li>
+          <li>Medical imaging archives</li>
+          <li>Research datasets rarely accessed</li>
+          <li>Legal records with long retention requirements</li>
+        </ul>
+        <div class="card" style="border-color:var(--accent)">
+          <div class="card-title">Important Clarification</div>
+          <p style="font-size:.73rem;color:var(--text-secondary);line-height:1.5">Glacier is not a separate physical device you manage. It's a set of S3 storage class options — you select the storage class when uploading objects or via lifecycle policies.</p>
+        </div>
+      </div>
+      <div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div class="card" style="border-color:var(--purple)">
+            <div class="card-title purple">Glacier Instant Retrieval</div>
+            <p style="font-size:.73rem;color:var(--text-secondary);line-height:1.5">Retrieval: milliseconds. Good for archives accessed once a quarter. Same latency as S3 Standard when retrieved.</p>
+          </div>
+          <div class="card" style="border-color:var(--accent)">
+            <div class="card-title">Glacier Flexible Retrieval</div>
+            <p style="font-size:.73rem;color:var(--text-secondary);line-height:1.5">Retrieval: minutes to hours (Expedited ~1-5 min, Standard ~3-5 hrs, Bulk ~5-12 hrs). Very low storage cost. Plan your retrieval in advance.</p>
+          </div>
+          <div class="card" style="border-color:var(--red)">
+            <div class="card-title" style="color:var(--red)">Glacier Deep Archive</div>
+            <p style="font-size:.73rem;color:var(--text-secondary);line-height:1.5">Retrieval: typically 12 hours (Standard) or 48 hours (Bulk). Lowest S3 storage cost. For data accessed once or twice per year at most.</p>
+          </div>
+        </div>
+        <p class="source-note mt-sm"><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/glacier-storage-classes.html" target="_blank" rel="noopener">S3 Glacier Storage Classes Docs</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 32: Storage Class Decision Helper -->
+<section class="slide" id="slide-32" data-section="Section G: Amazon S3 & Storage" data-title="Choosing a Storage Class">
+  <span class="section-badge">Section G · Slide 32 of 38</span>
+  <h2 class="slide-title">Choose Your <span class="accent">Storage Class</span></h2>
+  <p class="slide-subtitle">Answer the questions below to get an educational suggestion — not a production recommendation.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:flex-start">
+      <div class="decision-tree">
+        <div class="q-block">
+          <div class="q-text">1. How often do you access this data?</div>
+          <div class="q-btns">
+            <button class="q-btn" onclick="setDecision('freq','daily')" id="dq1a">Daily / Weekly</button>
+            <button class="q-btn" onclick="setDecision('freq','monthly')" id="dq1b">Monthly</button>
+            <button class="q-btn no-sel" onclick="setDecision('freq','rarely')" id="dq1c">Rarely / Never</button>
+          </div>
+        </div>
+        <div class="q-block">
+          <div class="q-text">2. How fast do you need to retrieve it?</div>
+          <div class="q-btns">
+            <button class="q-btn" onclick="setDecision('speed','instant')" id="dq2a">Instantly (ms)</button>
+            <button class="q-btn" onclick="setDecision('speed','minutes')" id="dq2b">Minutes OK</button>
+            <button class="q-btn no-sel" onclick="setDecision('speed','hours')" id="dq2c">Hours are fine</button>
+          </div>
+        </div>
+        <div class="q-block">
+          <div class="q-text">3. Is multi-AZ redundancy required?</div>
+          <div class="q-btns">
+            <button class="q-btn" onclick="setDecision('az','yes')" id="dq3a">Yes, critical data</button>
+            <button class="q-btn no-sel" onclick="setDecision('az','no')" id="dq3b">No / Not sure</button>
+          </div>
+        </div>
+        <div class="q-block">
+          <div class="q-text">4. Access pattern predictable?</div>
+          <div class="q-btns">
+            <button class="q-btn" onclick="setDecision('pattern','known')" id="dq4a">Yes, I know the pattern</button>
+            <button class="q-btn no-sel" onclick="setDecision('pattern','unknown')" id="dq4b">Unknown / Variable</button>
+          </div>
+        </div>
+        <button class="ctrl-btn" style="margin-top:4px;align-self:flex-start" onclick="calculateDecision()" aria-label="Get storage class recommendation">Get Suggestion →</button>
+      </div>
+      <div>
+        <div class="decision-result" id="decision-result">
+          <div class="res-label">Educational Suggestion</div>
+          <div class="res-class" id="decision-class">—</div>
+          <div class="res-note" id="decision-note">—</div>
+          <p class="source-note mt-sm">This is an educational starting point. Real decisions depend on current pricing, minimum storage durations, retrieval charges, compliance requirements, and regional availability. Always consult the <a href="https://aws.amazon.com/s3/storage-classes/" target="_blank" rel="noopener">AWS S3 storage classes page</a>.</p>
+        </div>
+        <div class="analogy-box mt-sm" style="font-size:.75rem">
+          <strong>Key principle:</strong> Lower storage cost often means higher retrieval cost and/or longer wait times. Choose based on your actual access patterns, not just the lowest price per GB.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION H: HANDS-ON — Slides 33-38
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- SLIDE 33: Let's Build Something Real -->
+<section class="slide" id="slide-33" data-section="Section H: S3 Hands-On" data-title="Our First Cloud Storage Bucket">
+  <span class="section-badge">Section H · Slide 33 of 38</span>
+  <h2 class="slide-title">Let's Build Something <span class="accent">Real</span></h2>
+  <p class="slide-subtitle">By the end of this session, we'll create an S3 bucket, upload a file, and retrieve it from AWS.</p>
+  <div class="slide-body">
+    <div class="two-col" style="gap:24px;align-items:flex-start">
+      <div>
+        <div class="highlight-box" style="margin-bottom:14px">
+          <strong>Goal:</strong> Use the AWS Management Console to create a real S3 bucket, upload a file, and explore its properties. This is a live demonstration on actual AWS infrastructure.
+        </div>
+        <div class="analogy-box">
+          <strong>What you'll experience:</strong><br>
+          ✓ Navigating the AWS Console<br>
+          ✓ Creating your first S3 bucket<br>
+          ✓ Uploading an object<br>
+          ✓ Viewing object properties<br>
+          ✓ Enabling versioning (if time permits)<br>
+          ✓ Downloading your file back
+        </div>
+        <div class="card mt-sm" style="border-color:var(--red);background:rgba(231,76,60,.05)">
+          <div style="font-size:.75rem;color:var(--red);font-weight:700;margin-bottom:4px">⚠️ Use an authorized account</div>
+          <p style="font-size:.72rem;color:var(--text-secondary)">Use an instructor-provided or classroom account. Do not use personal or production accounts for this exercise. Always delete practice resources afterwards.</p>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:.75rem;font-weight:700;color:var(--text-muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em">Checklist Progress</div>
+        <div class="checklist" id="demo-checklist">
+          <div class="check-item" onclick="toggleCheck(this)" tabindex="0" role="checkbox" aria-checked="false">
+            <div class="chk-circle"></div><div class="chk-text">Open the AWS Management Console</div>
+          </div>
+          <div class="check-item" onclick="toggleCheck(this)" tabindex="0" role="checkbox" aria-checked="false">
+            <div class="chk-circle"></div><div class="chk-text">Navigate to Amazon S3</div>
+          </div>
+          <div class="check-item" onclick="toggleCheck(this)" tabindex="0" role="checkbox" aria-checked="false">
+            <div class="chk-circle"></div><div class="chk-text">Create a bucket with a unique name</div>
+          </div>
+          <div class="check-item" onclick="toggleCheck(this)" tabindex="0" role="checkbox" aria-checked="false">
+            <div class="chk-circle"></div><div class="chk-text">Upload a sample file</div>
+          </div>
+          <div class="check-item" onclick="toggleCheck(this)" tabindex="0" role="checkbox" aria-checked="false">
+            <div class="chk-circle"></div><div class="chk-text">View the object and its properties</div>
+          </div>
+          <div class="check-item" onclick="toggleCheck(this)" tabindex="0" role="checkbox" aria-checked="false">
+            <div class="chk-circle"></div><div class="chk-text">Download the object</div>
+          </div>
+          <div class="check-item" onclick="toggleCheck(this)" tabindex="0" role="checkbox" aria-checked="false">
+            <div class="chk-circle"></div><div class="chk-text">Enable versioning (optional)</div>
+          </div>
+        </div>
+        <button class="ctrl-btn mt-sm" onclick="resetChecklist()" aria-label="Reset checklist">↺ Reset Checklist</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 34: AWS Safety First -->
+<section class="slide" id="slide-34" data-section="Section H: S3 Hands-On" data-title="Before We Begin — AWS Safety">
+  <span class="section-badge">Section H · Slide 34 of 38</span>
+  <h2 class="slide-title">Before We Begin: <span class="accent">AWS Safety</span></h2>
+  <div class="slide-body">
+    <div class="two-col" style="gap:20px;align-items:flex-start">
+      <div>
+        <ul class="bullet-list" style="margin-bottom:12px">
+          <li>AWS accounts can incur <strong style="color:var(--accent)">charges</strong> — some services have free usage allowances, but eligibility and limits vary</li>
+          <li>Use an <strong style="color:var(--green)">authorized account</strong> or instructor-provided environment</li>
+          <li>Never share your <strong style="color:var(--red)">passwords, access keys, or secret keys</strong> with anyone</li>
+          <li>Do not upload <strong style="color:var(--red)">private, sensitive, or confidential data</strong> to practice buckets</li>
+          <li>Keep <strong style="color:var(--accent)">S3 Block Public Access enabled</strong> for this exercise</li>
+          <li>Do not create any <strong style="color:var(--red)">public access bucket policies</strong></li>
+          <li>Delete practice resources <strong style="color:var(--green)">after the demonstration</strong> when appropriate</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card" style="border-color:var(--red);background:rgba(231,76,60,.05);margin-bottom:12px">
+          <div class="card-title" style="color:var(--red)">🚫 Never Do These</div>
+          <ul class="bullet-list" style="gap:5px">
+            <li>Share AWS credentials via chat or email</li>
+            <li>Enable public access on buckets with real data</li>
+            <li>Use a root account for daily tasks</li>
+            <li>Leave unused resources running</li>
+            <li>Upload passwords or API keys to S3</li>
+          </ul>
+        </div>
+        <div class="card" style="border-color:var(--green);background:rgba(46,204,113,.05)">
+          <div class="card-title green">✓ Good Practices</div>
+          <ul class="bullet-list green" style="gap:5px">
+            <li>Use IAM roles and policies</li>
+            <li>Enable MFA on your account</li>
+            <li>Delete practice resources after demo</li>
+            <li>Check billing dashboard regularly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="analogy-box mt-sm" style="font-size:.75rem">
+      <strong>Note:</strong> We will not be making any S3 bucket public during this demonstration. All data remains private to the AWS account. This exercise is for educational purposes only.
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 35: Hands-On Procedure -->
+<section class="slide" id="slide-35" data-section="Section H: S3 Hands-On" data-title="Step-by-Step: Create Your First S3 Bucket">
+  <span class="section-badge">Section H · Slide 35 of 38</span>
+  <h2 class="slide-title">Step-by-Step: Create Your <span class="accent">First S3 Bucket</span></h2>
+  <p class="slide-subtitle" style="font-size:.75rem">Console steps are based on the AWS Management Console at time of preparation. Labels may change — use the search bar if you can't find something.</p>
+  <div class="slide-body">
+    <div class="step-list scroll-inner">
+      <div class="step-item"><div class="step-num">1</div><div class="step-content">Sign in to the <strong>AWS Management Console</strong> at <span class="step-code">console.aws.amazon.com</span></div></div>
+      <div class="step-item"><div class="step-num">2</div><div class="step-content">In the search bar, type <span class="step-code">S3</span> and select <strong>Amazon S3</strong> from the results.</div></div>
+      <div class="step-item"><div class="step-num">3</div><div class="step-content">Click <strong>"Create bucket"</strong> button (top right of the S3 buckets page).</div></div>
+      <div class="step-item"><div class="step-num">4</div><div class="step-content">Enter a <strong>globally unique bucket name</strong>. Use lowercase letters, numbers, and hyphens only. Example: <span class="step-code">intro-cloud-demo-[your-unique-suffix]</span> — replace the suffix to make it unique.</div></div>
+      <div class="step-item"><div class="step-num">5</div><div class="step-content">Choose the <strong>AWS Region</strong> closest to you (e.g., Asia Pacific Mumbai for India).</div></div>
+      <div class="step-item"><div class="step-num">6</div><div class="step-content">Under Object Ownership: leave as default. Under Block Public Access: <strong>keep all blocks ENABLED</strong> (default). This keeps the bucket private.</div></div>
+      <div class="step-item"><div class="step-num">7</div><div class="step-content">Leave <strong>default encryption enabled</strong> (SSE-S3). Scroll to bottom and click <strong>"Create bucket"</strong>.</div></div>
+      <div class="step-item"><div class="step-num">8</div><div class="step-content">Click your new bucket name. Click <strong>"Upload"</strong>. Click <strong>"Add files"</strong> and select a small sample text file or image from your computer.</div></div>
+      <div class="step-item"><div class="step-num">9</div><div class="step-content">Click <strong>"Upload"</strong> at the bottom to confirm. Wait for the success message.</div></div>
+      <div class="step-item"><div class="step-num">10</div><div class="step-content">Click the uploaded object name to view its <strong>details, metadata, and properties</strong>.</div></div>
+      <div class="step-item"><div class="step-num">11</div><div class="step-content">Click <strong>"Download"</strong> to retrieve the file back to your computer. (The object URL requires authentication since the bucket is private.)</div></div>
+      <div class="step-item"><div class="step-num">12</div><div class="step-content"><em>(Optional)</em> Go back to the bucket. Open the <strong>"Properties"</strong> tab. Under "Bucket Versioning" click Edit and <strong>Enable versioning</strong>. Save changes.</div></div>
+      <div class="step-item"><div class="step-num">13</div><div class="step-content"><em>(Optional)</em> Upload a modified version of the same file using the <strong>same filename</strong> (same object key). This creates a new version.</div></div>
+      <div class="step-item"><div class="step-num">14</div><div class="step-content"><em>(Optional)</em> In the bucket, toggle <strong>"Show versions"</strong> to see both versions listed with their version IDs.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 36: Troubleshooting -->
+<section class="slide" id="slide-36" data-section="Section H: S3 Hands-On" data-title="Hands-On Troubleshooting">
+  <span class="section-badge">Section H · Slide 36 of 38</span>
+  <h2 class="slide-title">Hands-On <span class="accent">Troubleshooting</span></h2>
+  <div class="slide-body">
+    <div class="trouble-list scroll-inner">
+      <div class="trouble-item">
+        <div class="t-problem">❌ Bucket name already taken</div>
+        <div class="t-fix">S3 bucket names are globally unique across all AWS accounts. <strong>Add a unique suffix</strong> (e.g., your initials + date: <code style="background:#1a2a3a;padding:1px 4px;border-radius:3px">intro-cloud-demo-ab-20240301</code>). Avoid generic names.</div>
+      </div>
+      <div class="trouble-item">
+        <div class="t-problem">❌ "Access Denied" or insufficient permissions</div>
+        <div class="t-fix">Your IAM user or role may not have the required S3 permissions. Ask your instructor or account administrator to <strong>grant S3 access</strong> (e.g., AmazonS3FullAccess policy for this exercise). Never share root credentials.</div>
+      </div>
+      <div class="trouble-item">
+        <div class="t-problem">❌ Wrong AWS Region</div>
+        <div class="t-fix">Check the region selector in the top-right corner of the AWS Console. <strong>Switch to your intended region</strong> and look for your bucket there. Buckets are region-specific.</div>
+      </div>
+      <div class="trouble-item">
+        <div class="t-problem">❌ Upload fails or times out</div>
+        <div class="t-fix">Check your internet connection. Try a <strong>smaller file</strong> (a plain .txt file works well). Ensure you have S3:PutObject permission. Refresh the page and try again.</div>
+      </div>
+      <div class="trouble-item">
+        <div class="t-problem">❌ Versioning toggle not visible</div>
+        <div class="t-fix">Go to the bucket → <strong>Properties tab</strong> → scroll down to "Bucket Versioning" section. If it's still not visible, check that you have the bucket open (not the S3 homepage) and have sufficient permissions.</div>
+      </div>
+      <div class="trouble-item">
+        <div class="t-problem">❌ Can't access object via URL</div>
+        <div class="t-fix">This is expected — the bucket is <strong>private by default</strong>. Use the "Download" button in the console, not the object URL directly. The URL requires AWS authentication, which the browser alone cannot provide.</div>
+      </div>
+      <div class="trouble-item">
+        <div class="t-problem">❌ Unexpected charges concern</div>
+        <div class="t-fix"><strong>Delete the bucket and all objects</strong> after the demonstration. Check your billing dashboard. For small test files, charges are typically negligible, but always clean up. Use the AWS Free Tier if eligible.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 37: What Have We Learned? -->
+<section class="slide" id="slide-37" data-section="Section H: S3 Hands-On" data-title="What Have We Learned?">
+  <span class="section-badge">Section H · Slide 37 of 38</span>
+  <h2 class="slide-title">What Have We <span class="accent">Learned</span>?</h2>
+  <p class="slide-subtitle">A complete journey — from the basics to building in the cloud.</p>
+  <div class="slide-body">
+    <div class="recap-grid">
+      <div class="recap-card">
+        <div class="rc-icon">☁️</div>
+        <div class="rc-title">Cloud Computing</div>
+        <div class="rc-desc">On-demand resources over the internet, pay-as-you-go model</div>
+      </div>
+      <div class="recap-card">
+        <div class="rc-icon">🏢</div>
+        <div class="rc-title">AWS</div>
+        <div class="rc-desc">Amazon's cloud platform, launched 2006, with 200+ services globally</div>
+      </div>
+      <div class="recap-card">
+        <div class="rc-icon">💻</div>
+        <div class="rc-title">Amazon EC2</div>
+        <div class="rc-desc">Virtual servers — launch an OS, run your application</div>
+      </div>
+      <div class="recap-card">
+        <div class="rc-icon">⚙️</div>
+        <div class="rc-title">Virtual Machines</div>
+        <div class="rc-desc">Multiple isolated software computers on one physical host</div>
+      </div>
+      <div class="recap-card">
+        <div class="rc-icon">📈</div>
+        <div class="rc-title">Scaling</div>
+        <div class="rc-desc">Vertical (bigger server) or Horizontal (more servers + load balancer)</div>
+      </div>
+      <div class="recap-card">
+        <div class="rc-icon">📦</div>
+        <div class="rc-title">Amazon S3</div>
+        <div class="rc-desc">Object storage for files, media, backups — buckets, objects, keys</div>
+      </div>
+      <div class="recap-card">
+        <div class="rc-icon">🔄</div>
+        <div class="rc-title">S3 Versioning</div>
+        <div class="rc-desc">Preserve multiple versions of objects — recover accidental overwrites</div>
+      </div>
+      <div class="recap-card">
+        <div class="rc-icon">🗂️</div>
+        <div class="rc-title">Storage Classes</div>
+        <div class="rc-desc">Standard → IA → Glacier — balance access speed vs. storage cost</div>
+      </div>
+      <div class="recap-card">
+        <div class="rc-icon">🏛️</div>
+        <div class="rc-title">S3 Glacier</div>
+        <div class="rc-desc">Long-term archive — lowest cost, planned retrieval times</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 38: Questions and Thank You -->
+<section class="slide" id="slide-38" data-section="Section H: S3 Hands-On" data-title="Questions & Discussion">
+  <div class="q-slide-layout">
+    <div style="font-size:3rem" aria-hidden="true">☁️</div>
+    <div class="big-question">Questions? Let's Build in the Cloud.</div>
+    <p class="slide-subtitle" style="max-width:560px;margin:0 auto">Take a moment to reflect. Here are three questions to discuss with your group:</p>
+    <ul class="discussion-questions">
+      <li>What is the difference between EC2 and S3? When would you use each?</li>
+      <li>What is the difference between vertical and horizontal scaling? What are the tradeoffs?</li>
+      <li>Why would someone use S3 Glacier Deep Archive instead of S3 Standard?</li>
+    </ul>
+    <div class="stat-row" style="justify-content:center;margin-top:10px">
+      <div class="stat-bubble"><div class="stat-val">2006</div><div class="stat-lbl">AWS Founded</div></div>
+      <div class="stat-bubble"><div class="stat-val blue">$107.6B</div><div class="stat-lbl">AWS Net Sales 2024</div></div>
+      <div class="stat-bubble"><div class="stat-val">200+</div><div class="stat-lbl">AWS Services</div></div>
+      <div class="stat-bubble"><div class="stat-val blue">37%</div><div class="stat-lbl">AWS Operating Margin 2024</div></div>
+    </div>
+    <p style="font-size:.75rem;color:var(--text-muted);text-align:center">Thank you for attending. 🙏</p>
+    <p class="source-note" style="text-align:center"><a href="https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Fourth-Quarter-Results/default.aspx" target="_blank" rel="noopener">Financial data: Amazon Q4 2024 Earnings, Feb 2025</a></p>
+  </div>
+</section>
+
+      </div><!-- end slide-inner -->
+    </div><!-- end slide-container -->
+  </div><!-- end slide-stage -->
+
+  <!-- Bottom Nav -->
+  <nav id="bottom-nav" aria-label="Slide navigation">
+    <button class="nav-btn" id="btn-prev" onclick="prevSlide()" aria-label="Previous slide" disabled>← Previous</button>
+    <button class="nav-btn primary" id="btn-next" onclick="nextSlide()" aria-label="Next slide">Next →</button>
+  </nav>
+
+</div><!-- end presentation-wrapper -->
+
+<!-- ── Overview Modal ───────────────────────────────── -->
+<div id="overview-modal" role="dialog" aria-modal="true" aria-label="Slide overview">
+  <div id="overview-header">
+    <h2>📑 Slide Overview</h2>
+    <button id="overview-close" onclick="closeOverview()" aria-label="Close overview">✕ Close</button>
+  </div>
+  <div id="overview-grid" role="list"></div>
+</div>
+
+<!-- ── Presenter Notes Panel ─────────────────────────── -->
+<aside id="notes-panel" aria-label="Presenter notes">
+  <div id="notes-header">
+    <span>📝 Presenter Notes</span>
+    <button id="notes-close" onclick="toggleNotes()" aria-label="Close notes">✕</button>
+  </div>
+  <div id="notes-body"></div>
+</aside>
+
+<!-- ── Keyboard Shortcut Overlay ──────────────────────── -->
+<div id="shortcut-overlay" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
+  <div class="shortcut-box">
+    <h2>⌨️ Keyboard Shortcuts</h2>
+    <div class="shortcut-row"><span class="key">→ / Space</span><span class="desc">Next slide</span></div>
+    <div class="shortcut-row"><span class="key">←</span><span class="desc">Previous slide</span></div>
+    <div class="shortcut-row"><span class="key">Home</span><span class="desc">First slide</span></div>
+    <div class="shortcut-row"><span class="key">End</span><span class="desc">Last slide</span></div>
+    <div class="shortcut-row"><span class="key">O</span><span class="desc">Toggle overview</span></div>
+    <div class="shortcut-row"><span class="key">N</span><span class="desc">Toggle notes</span></div>
+    <div class="shortcut-row"><span class="key">F</span><span class="desc">Toggle fullscreen</span></div>
+    <div class="shortcut-row"><span class="key">Esc</span><span class="desc">Close overlay / Exit fullscreen</span></div>
+    <button class="shortcut-close-btn" onclick="closeShortcuts()">Got it!</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
